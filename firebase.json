@@ -1,5 +1,12 @@
 {
   "hosting": {
-    "public": "public"
+    "public": "public",
+    "headers": [{
+      "source": "bundle.js",
+      "headers" : [ {
+        "key" : "Cache-Control",
+        "value" : "max-age=604800"
+      } ]
+    }]
   }
 }
