@@ -9,8 +9,8 @@ jobs:
       - run: yarn
       - run: yarn build
       - deploy:
-        name: Firebase
-        command: |
-          if [ "${CIRCLE_BRANCH}" == "master" ]; then
-            yarn deploy
-          fi
+          name: Firebase
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              yarn deploy
+            fi
