@@ -15,14 +15,12 @@
   "devDependencies": {
     "gh-pages": "^0.12.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && firebase deploy",
+    "build": "gatsby build --prefix-links",
+    "deploy": "firebase deploy --token $FIREBASE_TOKEN",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"

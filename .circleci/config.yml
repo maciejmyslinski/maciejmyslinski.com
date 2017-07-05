@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/maciejmyslinski.com
+    docker:
+      - image: circleci/node:6.10.3
+    steps:
+      - checkout
+      - run
+        - yarn
+        - yarn build
+      - deploy
+        name: Firebase
+        command: |
+          if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            yarn deploy
+          fi
