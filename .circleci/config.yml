@@ -6,10 +6,9 @@ jobs:
       - image: circleci/node:6.10.3
     steps:
       - checkout
-      - run
-        - yarn
-        - yarn build
-      - deploy
+      - run: yarn
+      - run: yarn build
+      - deploy:
         name: Firebase
         command: |
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
