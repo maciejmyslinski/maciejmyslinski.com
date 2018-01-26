@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-      {children()}
+    {children()}
   </div>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func.isRequired,
 }
 
 export default TemplateWrapper
