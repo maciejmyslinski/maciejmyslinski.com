@@ -13,6 +13,11 @@
     "typography-plugin-code": "^0.15.9"
   },
   "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.0",
     "firebase-tools": "^3.9.1",
     "gh-pages": "^0.12.0"
   },
