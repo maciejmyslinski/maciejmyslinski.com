@@ -7,6 +7,7 @@ import favicon16 from 'images/favicons/favicon-16x16.png';
 import maskIcon from 'images/favicons/safari-pinned-tab.svg';
 import shortcut from 'images/favicons/favicon.ico';
 import browserConfig from 'images/favicons/browserconfig.xml';
+import 'normalize.css';
 
 const TemplateWrapper = ({ children }) => (
 	<div>
