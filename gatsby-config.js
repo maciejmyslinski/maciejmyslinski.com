@@ -7,7 +7,7 @@ module.exports = {
 			resolve: 'gatsby-plugin-manifest',
 			options: {
 				name: 'Maciej Myśliński',
-				short_name: 'Maciej Myśliński',
+				short_name: 'Maciej Myśli',
 				start_url: '/',
 				display: 'standalone',
 				icons: [
