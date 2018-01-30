@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => (
         open-source libraries. Thus, I regularly seek possibilities to contribute.
       </li>
       <li>
-        <b>Strive to be a husband my wife deserves.</b> She says I’m doing quite well with this one
+        <b>Strive to be a husband my wife deserves.</b> She says I’m doing quite well with this one{' '}
         <span role="img" aria-label="wink">
           😉
         </span>

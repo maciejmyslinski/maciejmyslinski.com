@@ -15,6 +15,7 @@ module.exports = {
     semi: ['error', 'never'],
     'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
     'react/no-unescaped-entities': 'off',
+    'no-unused-expressions': 'off',
   },
   globals: {
     graphql: true,
