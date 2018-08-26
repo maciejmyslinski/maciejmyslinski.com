@@ -10,10 +10,12 @@
   "dependencies": {
     "gatsby": "next",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0"
   },
   "devDependencies": {
     "gatsby-plugin-manifest": "^1.0.27",
-    "gatsby-plugin-offline": "^1.0.18"
+    "gatsby-plugin-offline": "^1.0.18",
+    "gatsby-plugin-react-helmet": "^2.0.11"
   }
 }

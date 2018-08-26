@@ -1,9 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 export default () => (
   <div>
+    <Helmet>
+      <html lang="en" />
+      <title>Maciej Myśliński – Senior Frontend Developer, Public Speaker.</title>
+      <meta name="description" content="My mission in 2018 is to speak at every frontend-related meetup in Poland." />
+    </Helmet>
     <h1>Maciej Myśliński</h1>
     <p>Senior Frontend Developer and Team Leader at Netguru. Public Speaker.</p>
+    <p>My mission in 2018 is to speak at every frontend-related meetup in Poland.</p>
     <h2>Public speaking events</h2>
     <h3>Upcoming</h3>
     <ul>
