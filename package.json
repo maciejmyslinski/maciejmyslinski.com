@@ -13,6 +13,7 @@
     "react-dom": "^16.4.2"
   },
   "devDependencies": {
+    "gatsby-plugin-manifest": "^1.0.27",
     "gatsby-plugin-offline": "^1.0.18"
   }
 }
