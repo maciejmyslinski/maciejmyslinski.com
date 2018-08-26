@@ -1,35 +1,15 @@
 {
-  "name": "maciejmyslinski.com",
-  "description": "Maciej Myśliński's website",
-  "version": "0.1",
-  "author": "Maciej Myśliński <hello@maciejmyslinski.com>",
-  "dependencies": {
-    "gatsby": "^1.9.158",
-    "gatsby-link": "^1.6.34",
-    "gatsby-plugin-manifest": "^1.0.13",
-    "gatsby-plugin-offline": "^1.0.13",
-    "gatsby-plugin-react-helmet": "^2.0.3",
-    "gatsby-plugin-react-next": "^1.0.8",
-    "gatsby-plugin-styled-components": "^2.0.5",
-    "react-helmet": "^5.2.0",
-    "styled-components": "^3.0.2"
-  },
-  "devDependencies": {
-    "eslint": "^4.16.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.6.0",
-    "firebase-tools": "^3.9.1",
-    "prettier": "^1.10.2"
-  },
-  "license": "UNLICENSED",
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
+  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "deploy": "firebase deploy --token $FIREBASE_TOKEN",
     "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:js": "eslint ./src"
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "next",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }
