@@ -10,7 +10,7 @@ export default () => (
     </Helmet>
     <h1>Maciej Myśliński</h1>
     <p>Senior Frontend Developer and Team Leader at Netguru. Public Speaker.</p>
-    <p>My mission in 2018 is to speak at every frontend-related meetup in Poland.</p>
+    <p>On a mission to speak at every frontend-related meetup in Poland in 2018.</p>
     <h2>Public speaking events</h2>
     <h3>Upcoming</h3>
     <ul>
