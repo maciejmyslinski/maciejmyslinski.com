@@ -1,6 +1,15 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Lato:400,700:latin-ext'],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
