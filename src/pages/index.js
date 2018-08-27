@@ -63,21 +63,21 @@ export default props => (
     </ul>
     <H2>Bio</H2>
     <P>
-      As a child, he dreamed to become a pilot. Hungry to feel the freedom of
+      As a child, he dreamed of becoming a pilot. Hungry for the freedom of
       flying, he craved to learn everything required to control the plane. He
-      wanted people to feel peaceful knowing he will be the one taking them
-      home.
+      wanted people to feel the peace of knowing he is going to be the one to
+      take them home.
     </P>
     <P>
-      At age 19 he didn't even know what the word ‘framework’ means.
+      At age 19 he didn't even know what the word ‘framework’ meant.
       Nevertheless, he sold his motorbike, purchased his first computer and
-      started to learn to program.
+      started to learn coding.
     </P>
     <P>
       Today as a Senior Frontend Developer, Team Leader, and internal Frontend
-      meetings host at Netguru, he enjoys the freedom of building anything the
-      technology allows him to. He continuously learns new technologies to build
-      apps people love to use.
+      meetings host at Netguru, he enjoys the freedom of building anything that
+      the technology allows him to. He continuously learns new technologies to
+      build apps people would love to use.
     </P>
   </Wrapper>
 );
