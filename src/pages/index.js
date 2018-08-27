@@ -2,11 +2,13 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { injectGlobal } from 'styled-components';
 import 'normalize.css';
-import Wrapper from './Wrapper/Wrapper';
-import H1 from './H1/H1';
-import H2 from './H2/H2';
-import H3 from './H3/H3';
-import P from './P/P';
+import Wrapper from '../components/Wrapper/Wrapper';
+import H1 from '../components/H1/H1';
+import H2 from '../components/H2/H2';
+import H3 from '../components/H3/H3';
+import P from '../components/P/P';
+import Avatar from '../components/Avatar/Avatar';
+import avatar from '../images/avatar.png';
 
 injectGlobal`
   html {
@@ -29,7 +31,7 @@ injectGlobal`
   }
 `;
 
-export default () => (
+export default props => (
   <Wrapper>
     <Helmet>
       <html lang="en" />
@@ -41,6 +43,7 @@ export default () => (
         content="My mission in 2018 is to speak at every frontend-related meetup in Poland."
       />
     </Helmet>
+    <Avatar src={avatar} />
     <H1>Maciej Myśliński</H1>
     <P>Senior Frontend Developer and Team Leader at Netguru. Public Speaker.</P>
     <P>

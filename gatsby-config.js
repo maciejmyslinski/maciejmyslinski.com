@@ -2,6 +2,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-styled-components',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -19,7 +28,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#2D9CDB`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/avatar.png`,
       },
     },
     'gatsby-plugin-offline',
