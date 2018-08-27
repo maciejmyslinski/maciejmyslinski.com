@@ -69,9 +69,9 @@ export default props => (
       home.
     </P>
     <P>
-      At age 19 he sold his motorbike, purchased his first computer and started
-      to learn to program. Back then he didn't even know what the word
-      ‘framework’ means.
+      At age 19 he didn't even know what the word ‘framework’ means.
+      Nevertheless, he sold his motorbike, purchased his first computer and
+      started to learn to program.
     </P>
     <P>
       Today as a Senior Frontend Developer, Team Leader, and internal Frontend
