@@ -94,7 +94,7 @@ export default props => (
         </a>
       </li>
       <li>Oct 2, 2018 – DevDuck</li>
-      <li>Oct 24, 2018 – G/Devs Lublin</li>
+      <li>Oct 24, 2018 – dev.js Lublin</li>
       <li>Nov 28, 2018 – meet.js Białystok</li>
       <li>Dec, 2018 – WarsawJS</li>
     </ul>
