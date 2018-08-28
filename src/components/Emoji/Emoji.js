@@ -8,6 +8,7 @@ import motorcycle from './emojis/motorcycle.png';
 import laptopComputer from './emojis/laptop-computer.png';
 import redHeart from './emojis/red-heart.png';
 import falgPoland from './emojis/flag-poland.png';
+import raisingHands from './emojis/raising-hands.png';
 
 const Emoji = styled.i`
   display: inline-block;
@@ -40,6 +41,8 @@ const Emoji = styled.i`
         return { backgroundImage: `url(${redHeart})` };
       case 'flag-poland':
         return { backgroundImage: `url(${falgPoland})` };
+      case 'raising-hands':
+        return { backgroundImage: `url(${raisingHands})` };
       default:
         return null;
     }
@@ -56,6 +59,7 @@ Emoji.propTypes = {
     'laptop-computer',
     'red-heart',
     'flag-poland',
+    'raising-hands',
   ]),
 };
 

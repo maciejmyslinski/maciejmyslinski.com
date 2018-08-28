@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { injectGlobal } from 'styled-components';
+import TweetEmbed from 'react-tweet-embed'
 import 'normalize.css';
 import Wrapper from '../components/Wrapper/Wrapper';
 import H1 from '../components/H1/H1';
@@ -66,7 +67,7 @@ export default props => (
       On a mission to speak at every frontend-related meetup in Poland{' '}
       <Emoji name="flag-poland" /> in 2018.
     </P>
-    <H2>
+    <H2 id="public-speaking-events">
       <Emoji name="studio-microphone" />
       Public speaking events
     </H2>
@@ -118,7 +119,12 @@ export default props => (
         </a>
       </li>
     </ul>
-    <H2>
+    <H2 id="others-about-me">
+      <Emoji name="raising-hands" />
+      Others about me
+    </H2>
+    <TweetEmbed id="1034202065990340608" />
+    <H2 id="bio">
       <Emoji name="waving-hand" />
       Bio
     </H2>
