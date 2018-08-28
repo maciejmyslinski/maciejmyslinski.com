@@ -1,8 +1,14 @@
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+import avatar from '../../images/avatar.png';
 
-export default styled.img`
+const Avatar = styled.img`
   width: 12.5rem;
   border-radius: 12.5rem;
   margin: 0 auto;
-`
+`;
+
+Avatar.defaultProps = {
+  src: avatar,
+};
+
+export default Avatar;
