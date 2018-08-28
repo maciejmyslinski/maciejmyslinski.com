@@ -31,11 +31,15 @@ injectGlobal`
   }
 
   a {
-    color: #2D9CDB;
+    color: #1C7BB0;
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
+    }
+
+    &:visited {
+      color: #125D87;
     }
   }
 `;
@@ -52,7 +56,7 @@ export default props => (
         content="My mission in 2018 is to speak at every frontend-related meetup in Poland."
       />
     </Helmet>
-    <Avatar />
+    <Avatar alt="avatar" />
     <H1>Maciej Myśliński</H1>
     <P>
       <Emoji name="man-technologist" />
