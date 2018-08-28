@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { injectGlobal } from 'styled-components';
-import TweetEmbed from 'react-tweet-embed'
+import TweetEmbed from 'react-tweet-embed';
 import 'normalize.css';
 import Wrapper from '../components/Wrapper/Wrapper';
 import H1 from '../components/H1/H1';
@@ -141,10 +141,11 @@ export default props => (
       coding.
     </P>
     <P>
-      Today as a Senior Frontend Developer, Team Leader, and internal Frontend
-      meetings host at Netguru, he enjoys the freedom of building anything that
-      the technology allows him to. He continuously learns new technologies to
-      build apps people would love <Emoji name="red-heart" /> to use.
+      Today as a Senior Frontend Developer, Team Leader and the host of internal
+      Frontend meetings at Netguru, he enjoys the freedom of building anything
+      that the technology allows him to. His goal changed a little bit but the
+      idea remained the same – he loves <Emoji name="red-heart" /> to give users a feeling of peace and
+      security while taking infinite care about user experience he delivers.
     </P>
   </Wrapper>
 );
