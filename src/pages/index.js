@@ -59,13 +59,18 @@ export default props => (
     </H2>
     <H3>Upcoming</H3>
     <ul>
-      <li>Aug 27, 2018 – meet.js Wrocław</li>
       <li>Aug 31, 2018 – meet.js Szczecin</li>
+      <li>Sep 19, 2018 – meet.js Katowice</li>
       <li>Sep 25, 2018 – React Poznań</li>
       <li>Sep 26, 2018 – dev.js Warszawa</li>
+      <li>Oct 2, 2018 – DevDuck</li>
+      <li>Oct 24, 2018 – G/Devs Lublin</li>
+      <li>Nov 28, 2018 – meet.js Białystok</li>
+      <li>Dec, 2018 – WarsawJS</li>
     </ul>
     <H3>Past</H3>
     <ul>
+      <li>Aug 27, 2018 – meet.js Wrocław</li>
       <li>Jun 6, 2018 – chill.js</li>
     </ul>
     <H2>
