@@ -29,6 +29,15 @@ injectGlobal`
   *, *:after, *:before {
     box-sizing: border-box;
   }
+
+  a {
+    color: #2D9CDB;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 export default props => (
@@ -59,10 +68,26 @@ export default props => (
     </H2>
     <H3>Upcoming</H3>
     <ul>
-      <li>Aug 31, 2018 – meet.js Szczecin</li>
+      <li>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://web.facebook.com/events/381649469036136/"
+        >
+          Aug 31, 2018 – meet.js Szczecin
+        </a>
+      </li>
       <li>Sep 19, 2018 – meet.js Katowice</li>
       <li>Sep 25, 2018 – React Poznań</li>
-      <li>Sep 26, 2018 – dev.js Warszawa</li>
+      <li>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.meetup.com/dev-js/events/251135731/"
+        >
+          Sep 26, 2018 – dev.js Warszawa
+        </a>
+      </li>
       <li>Oct 2, 2018 – DevDuck</li>
       <li>Oct 24, 2018 – G/Devs Lublin</li>
       <li>Nov 28, 2018 – meet.js Białystok</li>
@@ -70,8 +95,24 @@ export default props => (
     </ul>
     <H3>Past</H3>
     <ul>
-      <li>Aug 27, 2018 – meet.js Wrocław</li>
-      <li>Jun 6, 2018 – chill.js</li>
+      <li>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://web.facebook.com/hubert.zub/videos/1980027542053919/?__xts__[0]=68.ARDr4hkBDBRX--6TLQ944nGkXY4w2YwLjcP6_zOqTU3Nb4pkIm9Uc_E9uaVWx_9sQ_x4bdaxGuV8iNom179Ydz-5mCal-tsu4by7yzVVBKX68Oxrd8SW0UPKTFhOUDXxxZ5em4c&__tn__=-R"
+        >
+          Aug 27, 2018 – meet.js Wrocław
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://web.facebook.com/netguru/photos/gm.1868374533213251/10156257742389795/?type=1&theater"
+        >
+          Jun 6, 2018 – chill.js
+        </a>
+      </li>
     </ul>
     <H2>
       <Emoji name="waving-hand" />
