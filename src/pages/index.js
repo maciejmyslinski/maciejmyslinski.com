@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { injectGlobal } from 'styled-components';
-import TweetEmbed from 'react-tweet-embed'
 import 'normalize.css';
 import Wrapper from '../components/Wrapper/Wrapper';
 import H1 from '../components/H1/H1';
@@ -61,28 +60,16 @@ export default props => (
     <H1>Maciej Myśliński</H1>
     <P>
       <Emoji name="man-technologist" />
-      Senior Frontend Developer and Team Leader at Netguru. Public Speaker.
-    </P>
-    <P>
-      On a mission to speak at every frontend-related meetup in Poland{' '}
+      Senior Frontend Developer and Team Leader at Netguru. Public Speaker, on a
+      mission to speak at every frontend-related meetup in Poland{' '}
       <Emoji name="flag-poland" /> in 2018.
     </P>
     <H2 id="public-speaking-events">
       <Emoji name="studio-microphone" />
-      Public speaking events
+      Speaking
     </H2>
     <H3>Upcoming</H3>
     <ul>
-      <li>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://web.facebook.com/events/381649469036136/"
-        >
-          Aug 31, 2018 – meet.js Szczecin
-        </a>
-      </li>
-      <li>Sep 19, 2018 – meet.js Katowice</li>
       <li>Sep 25, 2018 – React Poznań</li>
       <li>
         <a
@@ -100,6 +87,16 @@ export default props => (
     </ul>
     <H3>Past</H3>
     <ul>
+      <li>Sep 17, 2018 – meet.js Kraków</li>
+      <li>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://web.facebook.com/events/381649469036136/"
+        >
+          Aug 31, 2018 – meet.js Szczecin
+        </a>
+      </li>
       <li>
         <a
           target="_blank"
@@ -119,14 +116,9 @@ export default props => (
         </a>
       </li>
     </ul>
-    <H2 id="others-about-me">
-      <Emoji name="raising-hands" />
-      Others about me
-    </H2>
-    <TweetEmbed id="1034202065990340608" />
     <H2 id="bio">
       <Emoji name="waving-hand" />
-      Bio
+      Biography
     </H2>
     <P>
       As a child, he dreamed of becoming a pilot. Hungry for the freedom of
