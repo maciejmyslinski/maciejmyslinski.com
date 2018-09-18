@@ -1,9 +1,8 @@
 import styled from 'styled-components';
+import { scaled } from '../utils/cssLocks';
 
 export default styled.div`
-  max-width: 52rem;
-  margin: 0 auto 2rem auto;
-  padding: 3.6rem;
+  margin: 0 ${scaled()} ${scaled()};
   display: flex;
   flex-flow: column;
 `;

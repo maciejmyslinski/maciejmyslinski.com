@@ -13,16 +13,12 @@ import Emoji from '../components/Emoji/Emoji';
 injectGlobal`
   html {
     font-size: 62.5%;
-
-    @media (min-width: 52em) {
-      font-size: 100%;
-    }
   }
 
   body {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
-    line-height: 1.42;
+    line-height: 1.62;
     color: rgba(0, 0, 0, .87);
   }
 
