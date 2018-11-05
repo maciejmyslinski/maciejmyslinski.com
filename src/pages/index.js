@@ -11,6 +11,7 @@ import H3 from '../components/H3/H3';
 import P from '../components/P/P';
 import Avatar from '../components/Avatar/Avatar';
 import Emoji from '../components/Emoji/Emoji';
+import { TheSun } from '../components/TheSun/TheSun';
 
 injectGlobal`
   html {
@@ -58,6 +59,7 @@ export default props => (
         content="My mission in 2018 is to speak at every frontend-related meetup in Poland."
       />
     </Helmet>
+    <TheSun />
     <Avatar alt="avatar" />
     <H1>Maciej Myśliński</H1>
     <P textAlign="center">
