@@ -9,6 +9,12 @@ import laptopComputer from './emojis/laptop-computer.png';
 import redHeart from './emojis/red-heart.png';
 import falgPoland from './emojis/flag-poland.png';
 import raisingHands from './emojis/raising-hands.png';
+import email from './emojis/email.svg';
+import linkedin from './emojis/linkedin.svg';
+import youtube from './emojis/youtube.svg';
+import instagram from './emojis/instagram.svg';
+import twitter from './emojis/twitter.svg';
+import github from './emojis/github.svg';
 
 const Emoji = styled.i`
   display: inline-block;
@@ -43,6 +49,18 @@ const Emoji = styled.i`
         return { backgroundImage: `url(${falgPoland})` };
       case 'raising-hands':
         return { backgroundImage: `url(${raisingHands})` };
+      case 'email':
+        return { backgroundImage: `url(${email})` };
+      case 'linkedin':
+        return { backgroundImage: `url(${linkedin})` };
+      case 'youtube':
+        return { backgroundImage: `url(${youtube})` };
+      case 'instagram':
+        return { backgroundImage: `url(${instagram})` };
+      case 'twitter':
+        return { backgroundImage: `url(${twitter})` };
+      case 'github':
+        return { backgroundImage: `url(${github})` };
       default:
         return null;
     }
@@ -60,6 +78,12 @@ Emoji.propTypes = {
     'red-heart',
     'flag-poland',
     'raising-hands',
+    'email',
+    'linkedin',
+    'youtube',
+    'instagram',
+    'twitter',
+    'github',
   ]),
 };
 
