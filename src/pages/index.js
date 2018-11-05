@@ -60,18 +60,9 @@ export default props => (
     </Helmet>
     <Avatar alt="avatar" />
     <H1>Maciej Myśliński</H1>
-    <P>
-      <Emoji name="email" />
-      <Emoji name="linkedin" />
-      <Emoji name="youtube" />
-      <Emoji name="instagram" />
-      <Emoji name="twitter" />
-      <Emoji name="github" />
-      <Emoji name="man-technologist" />
-      Senior Frontend Developer and Team Leader at Netguru. Public Speaker.
-    </P>
-    <P>
-      On a mission to speak at every frontend-related meetup in Poland{' '}
+    <P textAlign="center">
+      Senior Frontend Developer and Team Leader at Netguru. Public Speaker, on a
+      mission to speak at every frontend-related meetup in Poland{' '}
       <Emoji name="flag-poland" /> in 2018.
     </P>
     <H2 id="public-speaking-events">

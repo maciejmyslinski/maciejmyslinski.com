@@ -1,5 +1,9 @@
-import styled from 'styled-components';
+import system from 'system-components';
 
-export default styled.p`
-  margin: 2rem 0 0;
-`;
+export default system(
+  {
+    is: 'p',
+    mt: '2rem',
+  },
+  'textAlign'
+);
