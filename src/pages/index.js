@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { injectGlobal } from 'styled-components';
 import TweetEmbed from 'react-tweet-embed';
 import 'normalize.css';
+import '../fonts/fonts';
 import Wrapper from '../components/Wrapper/Wrapper';
 import H1 from '../components/H1/H1';
 import H2 from '../components/H2/H2';
@@ -21,7 +22,7 @@ injectGlobal`
   }
 
   body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Averta', sans-serif;
     font-size: 1.6rem;
     line-height: 1.42;
     color: rgba(0, 0, 0, .87);
@@ -144,8 +145,9 @@ export default props => (
       Today as a Senior Frontend Developer, Team Leader and the host of internal
       Frontend meetings at Netguru, he enjoys the freedom of building anything
       that the technology allows him to. His goal changed a little bit but the
-      idea remained the same – he loves <Emoji name="red-heart" /> to give users a feeling of peace and
-      security while taking infinite care about user experience he delivers.
+      idea remained the same – he loves <Emoji name="red-heart" /> to give users
+      a feeling of peace and security while taking infinite care about user
+      experience he delivers.
     </P>
   </Wrapper>
 );
