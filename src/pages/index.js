@@ -12,6 +12,7 @@ import P from '../components/P/P';
 import Avatar from '../components/Avatar/Avatar';
 import Emoji from '../components/Emoji/Emoji';
 import { TheSun } from '../components/TheSun/TheSun';
+import { TheMap } from '../components/TheMap/TheMap';
 
 injectGlobal`
   html {
@@ -69,8 +70,9 @@ export default props => (
     </P>
     <H2 id="public-speaking-events">
       <Emoji name="studio-microphone" />
-      Public speaking events
+      Where I spoke
     </H2>
+    <TheMap />
     <H3>Upcoming</H3>
     <ul>
       <li>
