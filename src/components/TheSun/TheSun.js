@@ -9,6 +9,7 @@ export const TheSun = system(
     left: '0',
     height: '100vh',
     width: '100vw',
+    zIndex: 1,
   },
   {
     background:

@@ -13,6 +13,7 @@ import Avatar from '../components/Avatar/Avatar';
 import Emoji from '../components/Emoji/Emoji';
 import { TheSun } from '../components/TheSun/TheSun';
 import { TheMap } from '../components/TheMap/TheMap';
+import { Ornament } from '../components/Ornament/Ornament';
 
 injectGlobal`
   html {
@@ -61,6 +62,10 @@ export default props => (
       />
     </Helmet>
     <TheSun />
+    <Ornament top="3vh" left="6vw" />
+    <Ornament top="15vh" left="80vw" width="6vw" />
+    <Ornament top="70vh" left="90vw" width="12vw" />
+    <Ornament top="80vh" left="12vw" width="8vw" />
     <Avatar alt="avatar" />
     <H1>Maciej Myśliński</H1>
     <P textAlign="center">
