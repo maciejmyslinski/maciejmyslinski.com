@@ -1,14 +1,15 @@
-import styled from 'styled-components';
-import avatar from '../../images/avatar.png';
+import system from 'system-components';
+import avatar from './avatar.png';
 
-const Avatar = styled.img`
-  width: 12.5rem;
-  border-radius: 12.5rem;
-  margin: 0 auto;
-`;
+export const Avatar = system({
+  is: 'img',
+  width: '9vw',
+  borderRadius: '9vw',
+  mt: '5rem',
+  m: '0 auto',
+});
 
 Avatar.defaultProps = {
+  ...Avatar.defaultProps,
   src: avatar,
 };
-
-export default Avatar;

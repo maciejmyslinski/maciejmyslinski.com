@@ -5,11 +5,11 @@ import TweetEmbed from 'react-tweet-embed';
 import 'normalize.css';
 import '../fonts/fonts';
 import Wrapper from '../components/Wrapper/Wrapper';
-import H1 from '../components/H1/H1';
+import { H1 } from '../components/H1/H1';
 import H2 from '../components/H2/H2';
 import H3 from '../components/H3/H3';
 import P from '../components/P/P';
-import Avatar from '../components/Avatar/Avatar';
+import { Avatar } from '../components/Avatar/Avatar';
 import Emoji from '../components/Emoji/Emoji';
 import { TheSun } from '../components/TheSun/TheSun';
 import { TheMap } from '../components/TheMap/TheMap';
@@ -62,13 +62,13 @@ export default props => (
       />
     </Helmet>
     <TheSun />
-    <Ornament top="3vh" left="6vw" />
-    <Ornament top="15vh" left="80vw" width="6vw" />
-    <Ornament top="70vh" left="90vw" width="12vw" />
-    <Ornament top="80vh" left="12vw" width="8vw" />
+    <Ornament top="1.5rem" left="3vw" />
+    <Ornament top="7rem" left="80vw" width="6vw" />
+    <Ornament top="30rem" left="90vw" width="12vw" />
+    <Ornament top="36rem" left="12vw" width="8vw" />
     <Avatar alt="avatar" />
     <H1>Maciej Myśliński</H1>
-    <P textAlign="center">
+    <P textAlign="center" mb="7rem">
       Senior Frontend Developer and Team Leader at Netguru. Public Speaker, on a
       mission to speak at every frontend-related meetup in Poland{' '}
       <Emoji name="flag-poland" /> in 2018.
