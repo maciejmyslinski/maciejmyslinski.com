@@ -5,7 +5,7 @@ import 'normalize.css';
 import '../fonts/fonts';
 import Wrapper from '../components/Wrapper/Wrapper';
 import { H1 } from '../components/H1/H1';
-import H2 from '../components/H2/H2';
+import { H2 } from '../components/H2/H2';
 import H3 from '../components/H3/H3';
 import P from '../components/P/P';
 import { Avatar } from '../components/Avatar/Avatar';
@@ -14,9 +14,37 @@ import { TheSun } from '../components/TheSun/TheSun';
 import { TheMap } from '../components/TheMap/TheMap';
 import { Ornament } from '../components/Ornament/Ornament';
 import { Styles } from '../components/Styles/Styles';
+import { SocialMedia } from '../components/SocialMedia/SocialMedia';
+
+const socialMediaAccounts = [
+  {
+    name: 'youtube',
+    url: 'https://youtube.com/maciejmyslinski',
+  },
+  {
+    name: 'instagram',
+    url: 'https://www.instagram.com/maciej.myslinski/',
+  },
+  {
+    name: 'linkedin',
+    url: 'https://www.linkedin.com/in/maciejmyslinski/',
+  },
+  {
+    name: 'twitter',
+    url: 'https://twitter.com/maciejmyslinski',
+  },
+  {
+    name: 'email',
+    url: 'mailto:hello@maciejmyslinski.com',
+  },
+  {
+    name: 'github',
+    url: 'https://github.com/maciejmyslinski',
+  },
+];
 
 export default props => (
-  <Styles> 
+  <Styles>
     <Wrapper>
       <Helmet>
         <html lang="en" />
@@ -36,7 +64,19 @@ export default props => (
         a mission to speak at every frontend-related meetup in Poland{' '}
         <Emoji name="flag-poland" /> in 2018.
       </P>
-      <H2 id="public-speaking-events">
+      <SocialMedia>
+        {socialMediaAccounts.map(account => (
+          <a
+            key={account.name}
+            href={account.url}
+            target="_blank"
+            referrer="noopener noreferrer"
+          >
+            <Emoji name={account.name} />
+          </a>
+        ))}
+      </SocialMedia>
+      <H2 id="public-speaking-events" mt="10rem">
         <Emoji name="studio-microphone" />
         Where I spoke
       </H2>
