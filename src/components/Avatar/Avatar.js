@@ -1,5 +1,5 @@
 import system from 'system-components';
-import avatar from './avatar.png';
+import avatar from '../../images/avatar.png';
 
 export const Avatar = system({
   is: 'img',
