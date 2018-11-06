@@ -13,7 +13,7 @@ export const TheSun = system(
   },
   {
     background:
-      'linear-gradient(137.5deg, rgba(255, 255, 255, 0.2) 14.09%, rgba(255, 255, 255, 0) 88.03%)',
+      'linear-gradient(137.5deg, rgba(255, 255, 255, 0.3) 14.09%, rgba(255, 255, 255, 0) 88.03%)',
     pointerEvents: 'none',
   }
 );

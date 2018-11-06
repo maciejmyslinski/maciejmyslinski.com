@@ -9,6 +9,17 @@ export const SocialMedia = system(
   {
     '> *': {
       fontSize: '2.8rem',
+      '@media (hover: hover)': {
+        filter: 'grayscale(20%)',
+        opacity: '0.8',
+        transition: 'filter ease-out 200ms, opacity ease-out 200ms',
+      },
+
+      '&:hover, &:active': {
+        filter: 'grayscale(0%)',
+        opacity: '1',
+      },
+
       '@media (min-width: 20em)': {
         fontSize: cssLocks({ minSize: 2.8, maxSize: 3.5 }),
       },
