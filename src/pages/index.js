@@ -170,19 +170,19 @@ export default props => (
       </OptimalLineLength>
     </Wrapper>
 
-    <Section mt="15rem">
+    <Section>
       <H3>Upcoming</H3>
       <Events>
         {upcomingEvents.map(event => (
-          <Event key={event.headline} {...event} />
+          <Event key={`${event.headline}${event.topic}`} {...event} />
         ))}
       </Events>
     </Section>
-    <Section mt="15rem">
+    <Section>
       <H3>Past</H3>
       <Events>
         {pastEvents.map(event => (
-          <Event key={event.headline} {...event} />
+          <Event key={`${event.headline}${event.topic}`} {...event} />
         ))}
       </Events>
     </Section>
