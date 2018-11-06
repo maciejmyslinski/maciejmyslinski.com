@@ -14,6 +14,8 @@ injectGlobal`
 
   *, *:after, *:before {
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   a {

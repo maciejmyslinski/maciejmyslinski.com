@@ -25,11 +25,6 @@ const cities = [
     left: '46%',
   },
   {
-    name: 'Katowice',
-    top: '75%',
-    left: '50%',
-  },
-  {
     name: 'Kraków',
     top: '78%',
     left: '58%',

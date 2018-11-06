@@ -1,12 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import TweetEmbed from 'react-tweet-embed';
 import 'normalize.css';
 import '../fonts/fonts';
 import Wrapper from '../components/Wrapper/Wrapper';
 import { H1 } from '../components/H1/H1';
 import { H2 } from '../components/H2/H2';
-import H3 from '../components/H3/H3';
+import { H3 } from '../components/H3/H3';
 import P from '../components/P/P';
 import { Avatar } from '../components/Avatar/Avatar';
 import Emoji from '../components/Emoji/Emoji';
@@ -15,6 +14,10 @@ import { TheMap } from '../components/TheMap/TheMap';
 import { Ornament } from '../components/Ornament/Ornament';
 import { Styles } from '../components/Styles/Styles';
 import { SocialMedia } from '../components/SocialMedia/SocialMedia';
+import { Section } from '../components/Section/Section';
+import { OptimalLineLength } from '../components/OptimalLineLength/OptimalLineLength';
+import { Event } from '../components/Event/Event';
+import { Events } from '../components/Events/Events';
 
 const socialMediaAccounts = [
   {
@@ -43,6 +46,87 @@ const socialMediaAccounts = [
   },
 ];
 
+const pastEvents = [
+  {
+    headline: '06.06 Poland, Poznań',
+    topic: '“What I learned creating my first Open Source library”',
+    name: 'chill.js',
+    link:
+      'https://web.facebook.com/netguru/photos/gm.1868374533213251/10156257742389795/?type=1&theater',
+  },
+  {
+    headline: '27.08 Poland, Wrocław',
+    topic: '“What I learned creating my first Open Source library”',
+    name: 'meet.js',
+    videoLink: 'https://web.facebook.com/hubert.zub/videos/1980027542053919/',
+  },
+  {
+    headline: '31.08 Poland, Szczecin',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'meet.js',
+    link: 'https://web.facebook.com/events/381649469036136/',
+  },
+  {
+    headline: '17.09 Poland, Kraków',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'meet.js',
+  },
+  {
+    headline: '26.09 Poland, Warszawa',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'dev.js',
+    link: 'https://www.meetup.com/dev-js/events/251135731/',
+    videoLink: 'https://www.facebook.com/devjspoland/videos/548311215612437/',
+  },
+  {
+    headline: '29.09 Poland, Poznań',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'Netguru Tech Talks',
+  },
+  {
+    headline: '29.09 Poland, Poznań',
+    topic: '"Async"',
+    name: 'Netguru Tech Talks',
+  },
+  {
+    headline: '02.10 Poland, Gliwice',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'DevDuck',
+    link: 'https://www.meetup.com/Devduck/events/254266703/',
+  },
+  {
+    headline: '24.10 Poland, Lublin',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'G/Devs Lublin',
+    link:
+      'https://www.facebook.com/gdevslublin/photos/rpp.520958894721563/1182752718542174/?type=3&theater',
+  },
+  {
+    headline: '25.10 Poland, Poznań',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'front.radar',
+    link:
+      'https://www.facebook.com/front.radar/photos/a.318446155553904/318446368887216/?type=3&theater',
+  },
+];
+
+const upcomingEvents = [
+  {
+    headline: '8.11 Poland, Olsztyn',
+    topic: '“What I learned creating my first Open Source library”',
+    name: 'meet.js',
+    link:
+      'https://www.facebook.com/events/1432139586930676/',
+  },
+  {
+    headline: '14.11 Poland, Białystok',
+    topic: '“What I learned creating my first Open Source library”',
+    name: 'meet.js',
+    link:
+      'https://www.facebook.com/events/583484972107142/',
+  },
+]
+
 export default props => (
   <Styles>
     <Wrapper>
@@ -57,13 +141,15 @@ export default props => (
         />
       </Helmet>
       <TheSun />
-      <Avatar alt="avatar" />
-      <H1>Maciej Myśliński</H1>
-      <P textAlign="center" mb="7rem">
-        Senior Frontend Developer and Team Leader at Netguru. Public Speaker, on
-        a mission to speak at every frontend-related meetup in Poland{' '}
-        <Emoji name="flag-poland" /> in 2018.
-      </P>
+      <OptimalLineLength>
+        <Avatar alt="avatar" />
+        <H1>Maciej Myśliński</H1>
+        <P textAlign="center" mb="7rem">
+          Senior Frontend Developer and Team Leader at Netguru. Public Speaker,
+          on a mission to speak at every frontend-related meetup in Poland{' '}
+          <Emoji name="flag-poland" /> in 2018.
+        </P>
+      </OptimalLineLength>
       <SocialMedia>
         {socialMediaAccounts.map(account => (
           <a
@@ -76,64 +162,32 @@ export default props => (
           </a>
         ))}
       </SocialMedia>
-      <H2 id="public-speaking-events" mt="10rem">
-        <Emoji name="studio-microphone" />
-        Where I spoke
-      </H2>
-      <TheMap />
+      <OptimalLineLength>
+        <H2 id="public-speaking-events" mt="12rem" mb="5rem">
+          Public speaking
+        </H2>
+        <TheMap />
+      </OptimalLineLength>
+    </Wrapper>
+
+    <Section mt="15rem">
       <H3>Upcoming</H3>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://web.facebook.com/events/381649469036136/"
-          >
-            Aug 31, 2018 – meet.js Szczecin
-          </a>
-        </li>
-        <li>Sep 19, 2018 – meet.js Katowice</li>
-        <li>Sep 25, 2018 – React Poznań</li>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.meetup.com/dev-js/events/251135731/"
-          >
-            Sep 26, 2018 – dev.js Warszawa
-          </a>
-        </li>
-        <li>Oct 2, 2018 – DevDuck</li>
-        <li>Oct 24, 2018 – dev.js Lublin</li>
-        <li>Nov 28, 2018 – meet.js Białystok</li>
-        <li>Dec, 2018 – WarsawJS</li>
-      </ul>
+      <Events>
+        {upcomingEvents.map(event => (
+          <Event key={event.headline} {...event} />
+        ))}
+      </Events>
+    </Section>
+    <Section mt="15rem">
       <H3>Past</H3>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://web.facebook.com/hubert.zub/videos/1980027542053919/?__xts__[0]=68.ARDr4hkBDBRX--6TLQ944nGkXY4w2YwLjcP6_zOqTU3Nb4pkIm9Uc_E9uaVWx_9sQ_x4bdaxGuV8iNom179Ydz-5mCal-tsu4by7yzVVBKX68Oxrd8SW0UPKTFhOUDXxxZ5em4c&__tn__=-R"
-          >
-            Aug 27, 2018 – meet.js Wrocław
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://web.facebook.com/netguru/photos/gm.1868374533213251/10156257742389795/?type=1&theater"
-          >
-            Jun 6, 2018 – chill.js
-          </a>
-        </li>
-      </ul>
-      <H2 id="others-about-me">
-        <Emoji name="raising-hands" />
-        Others about me
-      </H2>
-      <TweetEmbed id="1034202065990340608" />
+      <Events>
+        {pastEvents.map(event => (
+          <Event key={event.headline} {...event} />
+        ))}
+      </Events>
+    </Section>
+    <Wrapper>
+      <OptimalLineLength>
       <H2 id="bio">
         <Emoji name="waving-hand" />
         Bio
@@ -158,6 +212,8 @@ export default props => (
         to give users a feeling of peace and security while taking infinite care
         about user experience he delivers.
       </P>
+
+      </OptimalLineLength>
     </Wrapper>
   </Styles>
 );

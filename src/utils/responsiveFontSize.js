@@ -3,8 +3,8 @@ import { cssLocks } from './cssLocks';
 export const responsiveFontSize = ({
   minSize,
   maxSize,
-  minBreakpoint = 32,
-  maxBreakpoint = 74,
+  minBreakpoint,
+  maxBreakpoint,
 }) => {
   const cssCalc = cssLocks({
     minSize,

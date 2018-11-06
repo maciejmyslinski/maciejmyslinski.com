@@ -1,9 +1,21 @@
-import styled from 'styled-components';
+import system from 'system-components';
+import { responsiveFontSize } from '../../utils/responsiveFontSize';
 
-export default styled.h3`
-  font-size: 1.4rem;
-  margin: 2rem 0 0;
-  color: #595959;
-  font-weight: normal;
-  text-transform: uppercase;
-`;
+const left = responsiveFontSize({ minSize: 2, maxSize: -3 });
+
+const fontSize = responsiveFontSize({
+  minSize: 4,
+  maxSize: 15,
+});
+
+export const H3 = system({
+  is: 'h3',
+  opacity: '0.1',
+  fontSize,
+  position: 'absolute',
+  top: 0,
+  left,
+  m: '0',
+  zIndex: '-1',
+  maxWidth: '100rem',
+});
