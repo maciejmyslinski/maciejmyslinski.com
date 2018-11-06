@@ -6,7 +6,7 @@ export const Ornament = system(
     is: 'img',
     position: 'absolute',
     width: '12vw',
-    display: ['none', 'block'],
+    display: ['none', 'none', 'none', 'block'],
   },
   'top',
   'left'

@@ -16,7 +16,7 @@ import { Ornament } from '../components/Ornament/Ornament';
 import { Styles } from '../components/Styles/Styles';
 
 export default props => (
-  <Styles>
+  <Styles> 
     <Wrapper>
       <Helmet>
         <html lang="en" />

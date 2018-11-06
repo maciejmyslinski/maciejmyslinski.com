@@ -1,6 +1,6 @@
 export const theme = () => ({
-  // breakpoints: ['32rem', '52rem', '64rem'],
-  breakpoints: ['20em', '32.5em', '40em'],
+  // breakpoints: ['32rem', '74rem', '80rem'],
+  breakpoints: ['20em', '46.25em', '50em'],
   textStyles: {
     h1: {
       textAlign: 'center',
