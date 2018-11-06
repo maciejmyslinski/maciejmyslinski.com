@@ -29,10 +29,6 @@ export default props => (
         />
       </Helmet>
       <TheSun />
-      <Ornament top="1.5rem" left="3vw" />
-      <Ornament top="7rem" left="80vw" width="6vw" />
-      <Ornament top="30rem" left="90vw" width="12vw" />
-      <Ornament top="36rem" left="12vw" width="8vw" />
       <Avatar alt="avatar" />
       <H1>Maciej Myśliński</H1>
       <P textAlign="center" mb="7rem">
