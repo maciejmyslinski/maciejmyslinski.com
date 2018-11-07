@@ -20,5 +20,5 @@ export const EventVideoLink = system({
 
 EventVideoLink.defaultProps = {
   ...EventVideoLink.defaultProps,
-  children: <img src={playIcon} />,
+  children: <img src={playIcon} alt="play icon" />,
 };

@@ -41,5 +41,5 @@ export const EventLink = system({
 
 EventLink.defaultProps = {
   ...EventLink.defaultProps,
-  children: <img src={arrowRight} />,
+  children: <img src={arrowRight} alt="arrow right" />,
 };

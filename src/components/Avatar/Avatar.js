@@ -23,4 +23,5 @@ export const Avatar = system(
 Avatar.defaultProps = {
   ...Avatar.defaultProps,
   src: avatar,
+  alt: 'portrait',
 };

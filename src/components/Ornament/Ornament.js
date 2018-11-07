@@ -15,4 +15,5 @@ export const Ornament = system(
 Ornament.defaultProps = {
   ...Ornament.defaultProps,
   src: ornament,
+  alt: '',
 };
