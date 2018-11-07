@@ -13,11 +13,17 @@ export const Event = ({ headline, topic, name, link, videoLink }) => (
     <EventName>{name}</EventName>
     {!videoLink &&
       link && (
-        <EventLink href={link} target="_blank" referrer="noopener noreferrer" />
+        <EventLink
+          href={link}
+          target="_blank"
+          aria-label={`read more about ${headline} ${name}`}
+          referrer="noopener noreferrer"
+        />
       )}
     {videoLink && (
       <EventVideoLink
         href={videoLink}
+        aria-label={`watch a recording of ${headline} ${name}`}
         target="_blank"
         referrer="noopener noreferrer"
       />

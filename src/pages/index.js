@@ -155,6 +155,7 @@ export default props => (
           <a
             key={account.name}
             href={account.url}
+            aria-label={account.name}
             target="_blank"
             referrer="noopener noreferrer"
           >
