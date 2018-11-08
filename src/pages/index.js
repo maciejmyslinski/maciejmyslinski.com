@@ -72,7 +72,7 @@ const pastEvents = [
     name: 'meet.js',
   },
   {
-    headline: '26.09 Poland, Warszawa',
+    headline: '26.09 Poland, Warsaw',
     topic: '"What I learned creating my first Open Source library"',
     name: 'dev.js',
     link: 'https://www.meetup.com/dev-js/events/251135731/',
@@ -124,6 +124,13 @@ const upcomingEvents = [
     name: 'meet.js',
     link:
       'https://www.facebook.com/events/583484972107142/',
+  },
+  {
+    headline: '4-5.12 Poland, Warsaw',
+    topic: '“The missing piece of testing”',
+    name: 'Frontend Con 2018',
+    link:
+      'https://frontend-con.io/speakers/',
   },
 ]
 
