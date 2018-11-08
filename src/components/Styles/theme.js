@@ -8,4 +8,7 @@ export const theme = () => ({
       fontSize: '5vw',
     },
   },
+  colors: {
+    netguru: '#00d563',
+  },
 });

@@ -18,6 +18,7 @@ const cities = [
     name: 'Warszawa',
     top: '43%',
     left: '66%',
+    isUpcoming: true,
   },
   {
     name: 'Gliwice',
@@ -38,19 +39,21 @@ const cities = [
     name: 'Olsztyn',
     top: '20%',
     left: '60%',
+    isUpcoming: true,
   },
   {
     name: 'Białystok',
     top: '30%',
     left: '87%',
+    isUpcoming: true,
   },
 ];
 
 export const TheMap = () => (
   <div style={{ position: 'relative' }}>
     <img style={{ width: '100%' }} src={theMap} alt="public speaking map" />
-    {cities.map(city => (
-      <TheMapDot key={city.name} top={city.top} left={city.left} />
+    {cities.map(({ name, left, top, isUpcoming }) => (
+      <TheMapDot key={name} top={top} left={left} isUpcoming={isUpcoming} />
     ))}
   </div>
 );

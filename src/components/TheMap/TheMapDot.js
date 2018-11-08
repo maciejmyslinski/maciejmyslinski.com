@@ -8,6 +8,13 @@ export const TheMapDot = system(
     borderRadius: '1rem',
     bg: 'black',
   },
+  ({ theme, isUpcoming }) => {
+    if (isUpcoming) {
+      return {
+        background: theme.colors.netguru,
+      };
+    }
+  },
   'top',
   'left'
 );
