@@ -11,7 +11,6 @@ import { Avatar } from '../components/Avatar/Avatar';
 import Emoji from '../components/Emoji/Emoji';
 import { TheSun } from '../components/TheSun/TheSun';
 import { TheMap } from '../components/TheMap/TheMap';
-import { Ornament } from '../components/Ornament/Ornament';
 import { Styles } from '../components/Styles/Styles';
 import { SocialMedia } from '../components/SocialMedia/SocialMedia';
 import { Section } from '../components/Section/Section';
@@ -108,31 +107,28 @@ const pastEvents = [
     link:
       'https://www.facebook.com/front.radar/photos/a.318446155553904/318446368887216/?type=3&theater',
   },
-];
-
-const upcomingEvents = [
   {
     headline: '8.11 Poland, Olsztyn',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
-    link:
-      'https://www.facebook.com/events/1432139586930676/',
+    link: 'https://www.facebook.com/events/1432139586930676/',
   },
+];
+
+const upcomingEvents = [
   {
     headline: '14.11 Poland, Białystok',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
-    link:
-      'https://www.facebook.com/events/583484972107142/',
+    link: 'https://www.facebook.com/events/583484972107142/',
   },
   {
     headline: '4-5.12 Poland, Warsaw',
     topic: '“The missing piece of testing”',
     name: 'Frontend Con 2018',
-    link:
-      'https://frontend-con.io/speakers/',
+    link: 'https://frontend-con.io/speakers/',
   },
-]
+];
 
 export default props => (
   <Styles>
@@ -164,7 +160,7 @@ export default props => (
             href={account.url}
             aria-label={account.name}
             target="_blank"
-            referrer="noopener noreferrer"
+            rel="noopener noreferrer"
           >
             <Emoji name={account.name} />
           </a>
@@ -196,31 +192,30 @@ export default props => (
     </Section>
     <Wrapper>
       <OptimalLineLength>
-      <H2 id="bio">
-        <Emoji name="waving-hand" />
-        Bio
-      </H2>
-      <P>
-        As a child, he dreamed of becoming a pilot. Hungry for the freedom of
-        flying <Emoji name="airplane" />, he craved to learn everything required
-        to control the plane. He wanted people to feel the peace of knowing he
-        is going to be the one to take them home.
-      </P>
-      <P>
-        At age 19 he didn't even know what the word ‘framework’ meant.
-        Nevertheless, he sold his motorbike <Emoji name="motorcycle" />,
-        purchased his first computer <Emoji name="laptop-computer" /> and
-        started to learn coding.
-      </P>
-      <P>
-        Today as a Senior Frontend Developer, Team Leader and the host of
-        internal Frontend meetings at Netguru, he enjoys the freedom of building
-        anything that the technology allows him to. His goal changed a little
-        bit but the idea remained the same – he loves <Emoji name="red-heart" />{' '}
-        to give users a feeling of peace and security while taking infinite care
-        about user experience he delivers.
-      </P>
-
+        <H2 id="bio">
+          <Emoji name="waving-hand" />
+          Bio
+        </H2>
+        <P>
+          As a child, he dreamed of becoming a pilot. Hungry for the freedom of
+          flying <Emoji name="airplane" />, he craved to learn everything
+          required to control the plane. He wanted people to feel the peace of
+          knowing he is going to be the one to take them home.
+        </P>
+        <P>
+          At age 19 he didn't even know what the word ‘framework’ meant.
+          Nevertheless, he sold his motorbike <Emoji name="motorcycle" />,
+          purchased his first computer <Emoji name="laptop-computer" /> and
+          started to learn coding.
+        </P>
+        <P>
+          Today as a Senior Frontend Developer, Team Leader and the host of
+          internal Frontend meetings at Netguru, he enjoys the freedom of
+          building anything that the technology allows him to. His goal changed
+          a little bit but the idea remained the same – he loves{' '}
+          <Emoji name="red-heart" /> to give users a feeling of peace and
+          security while taking infinite care about user experience he delivers.
+        </P>
       </OptimalLineLength>
     </Wrapper>
   </Styles>

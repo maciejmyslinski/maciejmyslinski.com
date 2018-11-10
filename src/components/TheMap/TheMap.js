@@ -39,7 +39,6 @@ const cities = [
     name: 'Olsztyn',
     top: '20%',
     left: '60%',
-    isUpcoming: true,
   },
   {
     name: 'Białystok',

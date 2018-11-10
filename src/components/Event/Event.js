@@ -17,7 +17,7 @@ export const Event = ({ headline, topic, name, link, videoLink }) => (
           href={link}
           target="_blank"
           aria-label={`read more about ${headline} ${name}`}
-          referrer="noopener noreferrer"
+          rel="noopener noreferrer"
         />
       )}
     {videoLink && (
@@ -25,7 +25,7 @@ export const Event = ({ headline, topic, name, link, videoLink }) => (
         href={videoLink}
         aria-label={`watch a recording of ${headline} ${name}`}
         target="_blank"
-        referrer="noopener noreferrer"
+        rel="noopener noreferrer"
       />
     )}
   </EventCard>

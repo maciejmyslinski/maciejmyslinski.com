@@ -18,3 +18,8 @@ export const TheMapDot = system(
   'top',
   'left'
 );
+
+TheMapDot.defaultProps = {
+  ...TheMapDot.defaultProps,
+  blacklist: [...TheMapDot.defaultProps.blacklist, 'isUpcoming'],
+};
