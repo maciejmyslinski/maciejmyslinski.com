@@ -1,5 +1,4 @@
 import system from 'system-components';
-import styled from 'styled-components';
 import { responsiveFontSize } from '../../utils/responsiveFontSize';
 
 const fontSize = responsiveFontSize({
