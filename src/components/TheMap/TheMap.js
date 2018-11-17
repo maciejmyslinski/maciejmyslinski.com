@@ -44,7 +44,6 @@ const cities = [
     name: 'Białystok',
     top: '30%',
     left: '87%',
-    isUpcoming: true,
   },
 ];
 

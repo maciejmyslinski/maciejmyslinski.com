@@ -113,15 +113,15 @@ const pastEvents = [
     name: 'meet.js',
     link: 'https://www.facebook.com/events/1432139586930676/',
   },
-];
-
-const upcomingEvents = [
   {
     headline: '14.11 Poland, Białystok',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
     link: 'https://www.facebook.com/events/583484972107142/',
   },
+];
+
+const upcomingEvents = [
   {
     headline: '4-5.12 Poland, Warsaw',
     topic: '“The missing piece of testing”',
