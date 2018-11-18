@@ -7,6 +7,7 @@ export const Events = system(
   {
     display: 'flex',
     flexWrap: 'wrap',
+    width: '100%',
     maxWidth: '100rem',
     mt,
   },

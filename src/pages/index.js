@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import 'normalize.css';
+import Plx from 'react-plx';
 import '../fonts/fonts';
 import Wrapper from '../components/Wrapper/Wrapper';
 import { H1 } from '../components/H1/H1';
@@ -130,6 +131,25 @@ const upcomingEvents = [
   },
 ];
 
+const plxProps = {
+  disabled: typeof window === 'undefined',
+  parallaxData: [
+    {
+      start: 'self',
+      duration: '110vh',
+      properties: [
+        {
+          startValue: 0,
+          endValue: 25,
+          unit: '%',
+          property: 'translateY',
+        },
+        { startValue: 1, endValue: 0.7, property: 'opacity' },
+      ],
+    },
+  ],
+};
+
 export default props => (
   <Styles>
     <Wrapper>
@@ -175,7 +195,9 @@ export default props => (
     </Wrapper>
 
     <Section>
-      <H3>Upcoming</H3>
+      <H3>
+        <Plx {...plxProps}>Upcoming</Plx>
+      </H3>
       <Events>
         {upcomingEvents.map(event => (
           <Event key={`${event.headline}${event.topic}`} {...event} />
@@ -183,7 +205,9 @@ export default props => (
       </Events>
     </Section>
     <Section>
-      <H3>Past</H3>
+      <H3>
+        <Plx {...plxProps}>Past</Plx>
+      </H3>
       <Events>
         {pastEvents.map(event => (
           <Event key={`${event.headline}${event.topic}`} {...event} />
