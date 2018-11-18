@@ -9452,6 +9452,13 @@ react-tweet-embed@^1.1.1:
   resolved "https://registry.yarnpkg.com/react-tweet-embed/-/react-tweet-embed-1.1.1.tgz#91243783e1068b8eadf985fbf706405b6208082e"
   integrity sha512-aVvBiFUWjg7/OhsKN4TQNeXJrer+zqQn2vFgpCGJaNkihy7WTDxiAgru6mD7IukmggNEd1EszTsnc9NYKkm6TA==
 
+react-visibility-sensor@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/react-visibility-sensor/-/react-visibility-sensor-5.0.2.tgz#e360fff81572cb3a2a9fd680484447a9da09a55d"
+  integrity sha512-7+1lr7oQOO2vKr5u/uxoDGFWAAy7lsDy2aJU3Zy1/OymI+TRqOBk8m2L8YE1B0UyfCDWxVAWO+aifVGqNOvqeQ==
+  dependencies:
+    prop-types "^15.6.2"
+
 react@^16.4.2:
   version "16.4.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.4.2.tgz#2cd90154e3a9d9dd8da2991149fdca3c260e129f"

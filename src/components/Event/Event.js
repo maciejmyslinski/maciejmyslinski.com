@@ -6,20 +6,25 @@ import { EventName } from './EventName';
 import { EventLink } from './EventLink';
 import { EventVideoLink } from './EventVideoLink';
 
-export const Event = ({ headline, topic, name, link, videoLink }) => (
+export const Event = ({
+  headline,
+  topic,
+  name,
+  link,
+  videoLink,
+}) => (
   <EventCard>
     <EventHeadline>{headline}</EventHeadline>
     <EventTopic>{topic}</EventTopic>
     <EventName>{name}</EventName>
-    {!videoLink &&
-      link && (
-        <EventLink
-          href={link}
-          target="_blank"
-          aria-label={`read more about ${headline} ${name}`}
-          rel="noopener noreferrer"
-        />
-      )}
+    {!videoLink && link && (
+      <EventLink
+        href={link}
+        target="_blank"
+        aria-label={`read more about ${headline} ${name}`}
+        rel="noopener noreferrer"
+      />
+    )}
     {videoLink && (
       <EventVideoLink
         href={videoLink}

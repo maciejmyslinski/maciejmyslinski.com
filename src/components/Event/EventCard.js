@@ -11,7 +11,6 @@ export const EventCard = system({
   gridTemplateAreas: '"headline headline" "topic topic" "name link"',
   gridTemplateColumns: '1fr auto',
   gridRowGap: '0.5rem',
-  flex: '1 1 30rem',
   mt: marginY,
   mr: '2.5rem',
   mb: marginY,

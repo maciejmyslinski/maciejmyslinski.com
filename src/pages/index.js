@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import 'normalize.css';
 import Plx from 'react-plx';
+import 'normalize.css';
 import '../fonts/fonts';
 import Wrapper from '../components/Wrapper/Wrapper';
 import { H1 } from '../components/H1/H1';
@@ -18,6 +18,7 @@ import { Section } from '../components/Section/Section';
 import { OptimalLineLength } from '../components/OptimalLineLength/OptimalLineLength';
 import { Event } from '../components/Event/Event';
 import { Events } from '../components/Events/Events';
+import { AnimateInOut } from '../components/AnimateInOut/AnimateInOut';
 
 const socialMediaAccounts = [
   {
@@ -200,7 +201,9 @@ export default props => (
       </H3>
       <Events>
         {upcomingEvents.map(event => (
-          <Event key={`${event.headline}${event.topic}`} {...event} />
+          <AnimateInOut key={`${event.headline}${event.topic}`}>
+            <Event {...event} />
+          </AnimateInOut>
         ))}
       </Events>
     </Section>
@@ -209,8 +212,13 @@ export default props => (
         <Plx {...plxProps}>Past</Plx>
       </H3>
       <Events>
-        {pastEvents.map(event => (
-          <Event key={`${event.headline}${event.topic}`} {...event} />
+        {pastEvents.map((event, i) => (
+          <AnimateInOut
+            key={`${event.headline}${event.topic}`}
+            delay={i % 2 === 0 ? 0 : 200}
+          >
+            <Event key={`${event.headline}${event.topic}`} {...event} />
+          </AnimateInOut>
         ))}
       </Events>
     </Section>
