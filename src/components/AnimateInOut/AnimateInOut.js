@@ -5,6 +5,7 @@ import { AnimateInOutWrapper } from './AnimateInOutWrapper';
 export const AnimateInOut = ({ delay, children }) => (
   <AnimateInOutWrapper delay={delay}>
     <Plx
+      disabled={typeof window === 'undefined'}
       parallaxData={[
         {
           start: 'self',
