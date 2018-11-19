@@ -2,11 +2,14 @@ import React from 'react';
 import { node } from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
-import './globalStyles';
+import { StylesGlobal } from './StylesGlobal';
 
 export const Styles = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <div style={{ overflowX: 'hidden' }}>{children}</div>
+    <React.Fragment>
+      <StylesGlobal />
+      <div style={{ overflowX: 'hidden' }}>{children}</div>
+    </React.Fragment>
   </ThemeProvider>
 );
 

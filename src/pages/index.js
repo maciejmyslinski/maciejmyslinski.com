@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Plx from 'react-plx';
 import 'normalize.css';
-import '../fonts/fonts';
 import Wrapper from '../components/Wrapper/Wrapper';
 import { H1 } from '../components/H1/H1';
 import { H2 } from '../components/H2/H2';
@@ -19,6 +18,7 @@ import { OptimalLineLength } from '../components/OptimalLineLength/OptimalLineLe
 import { Event } from '../components/Event/Event';
 import { Events } from '../components/Events/Events';
 import { AnimateInOut } from '../components/AnimateInOut/AnimateInOut';
+import { Fonts } from '../components/Fonts/Fonts';
 
 const socialMediaAccounts = [
   {
@@ -184,6 +184,7 @@ export default () => (
           content="My mission in 2018 is to speak at every frontend-related meetup in Poland."
         />
       </Helmet>
+      <Fonts />
       <TheSun />
       <OptimalLineLength>
         <Avatar alt="avatar" />
