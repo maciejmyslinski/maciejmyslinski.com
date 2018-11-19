@@ -49,58 +49,22 @@ const socialMediaAccounts = [
 
 const pastEvents = [
   {
-    headline: '06.06 Poland, Poznań',
-    topic: '“What I learned creating my first Open Source library”',
-    name: 'chill.js',
-    link:
-      'https://web.facebook.com/netguru/photos/gm.1868374533213251/10156257742389795/?type=1&theater',
-  },
-  {
-    headline: '27.08 Poland, Wrocław',
+    headline: '14.11 Poland, Białystok',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
-    videoLink: 'https://web.facebook.com/hubert.zub/videos/1980027542053919/',
+    link: 'https://www.facebook.com/events/583484972107142/',
   },
   {
-    headline: '31.08 Poland, Szczecin',
-    topic: '"What I learned creating my first Open Source library"',
+    headline: '8.11 Poland, Olsztyn',
+    topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
-    link: 'https://web.facebook.com/events/381649469036136/',
+    link: 'https://www.facebook.com/events/1432139586930676/',
   },
   {
-    headline: '17.09 Poland, Kraków',
-    topic: '"What I learned creating my first Open Source library"',
-    name: 'meet.js',
-  },
-  {
-    headline: '26.09 Poland, Warsaw',
-    topic: '"What I learned creating my first Open Source library"',
-    name: 'dev.js',
-    link: 'https://www.meetup.com/dev-js/events/251135731/',
-    videoLink: 'https://www.facebook.com/devjspoland/videos/548311215612437/',
-  },
-  {
-    headline: '29.09 Poland, Poznań',
-    topic: '"What I learned creating my first Open Source library"',
-    name: 'Netguru Tech Talks',
-  },
-  {
-    headline: '29.09 Poland, Poznań',
-    topic: '"Async"',
-    name: 'Netguru Tech Talks',
-  },
-  {
-    headline: '02.10 Poland, Gliwice',
-    topic: '"What I learned creating my first Open Source library"',
-    name: 'DevDuck',
-    link: 'https://www.meetup.com/Devduck/events/254266703/',
-  },
-  {
-    headline: '24.10 Poland, Lublin',
-    topic: '"What I learned creating my first Open Source library"',
-    name: 'G/Devs Lublin',
-    link:
-      'https://www.facebook.com/gdevslublin/photos/rpp.520958894721563/1182752718542174/?type=3&theater',
+    headline: '30.10 Germany, Darmstadt',
+    topic: 'Introducing Liquid Design System',
+    name: 'Merck KGaA',
+    link: 'https://www.merck.design/',
   },
   {
     headline: '25.10 Poland, Poznań',
@@ -110,22 +74,58 @@ const pastEvents = [
       'https://www.facebook.com/front.radar/photos/a.318446155553904/318446368887216/?type=3&theater',
   },
   {
-    headline: '30.10 Germany, Darmstadt',
-    topic: 'Introducing Liquid Design System',
-    name: 'Merck KGaA',
-    link: 'https://www.merck.design/',
+    headline: '24.10 Poland, Lublin',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'G/Devs Lublin',
+    link:
+      'https://www.facebook.com/gdevslublin/photos/rpp.520958894721563/1182752718542174/?type=3&theater',
   },
   {
-    headline: '8.11 Poland, Olsztyn',
-    topic: '“What I learned creating my first Open Source library”',
-    name: 'meet.js',
-    link: 'https://www.facebook.com/events/1432139586930676/',
+    headline: '02.10 Poland, Gliwice',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'DevDuck',
+    link: 'https://www.meetup.com/Devduck/events/254266703/',
   },
   {
-    headline: '14.11 Poland, Białystok',
+    headline: '29.09 Poland, Poznań',
+    topic: '"Async"',
+    name: 'Netguru Tech Talks',
+  },
+  {
+    headline: '29.09 Poland, Poznań',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'Netguru Tech Talks',
+  },
+  {
+    headline: '26.09 Poland, Warsaw',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'dev.js',
+    link: 'https://www.meetup.com/dev-js/events/251135731/',
+    videoLink: 'https://www.facebook.com/devjspoland/videos/548311215612437/',
+  },
+  {
+    headline: '17.09 Poland, Kraków',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'meet.js',
+  },
+  {
+    headline: '31.08 Poland, Szczecin',
+    topic: '"What I learned creating my first Open Source library"',
+    name: 'meet.js',
+    link: 'https://web.facebook.com/events/381649469036136/',
+  },
+  {
+    headline: '27.08 Poland, Wrocław',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
-    link: 'https://www.facebook.com/events/583484972107142/',
+    videoLink: 'https://web.facebook.com/hubert.zub/videos/1980027542053919/',
+  },
+  {
+    headline: '06.06 Poland, Poznań',
+    topic: '“What I learned creating my first Open Source library”',
+    name: 'chill.js',
+    link:
+      'https://web.facebook.com/netguru/photos/gm.1868374533213251/10156257742389795/?type=1&theater',
   },
 ];
 
