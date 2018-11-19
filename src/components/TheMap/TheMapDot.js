@@ -14,6 +14,7 @@ export const TheMapDot = system(
         background: theme.colors.netguru,
       };
     }
+    return null;
   },
   'top',
   'left'

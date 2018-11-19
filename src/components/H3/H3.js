@@ -21,6 +21,6 @@ export const H3 = system(
     maxWidth: '100rem',
   },
   {
-    transform: `translateY(-25%)`,
+    transform: 'translateY(-25%)',
   }
 );

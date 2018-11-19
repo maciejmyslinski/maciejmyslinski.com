@@ -7,7 +7,7 @@ import airplane from './emojis/airplane.png';
 import motorcycle from './emojis/motorcycle.png';
 import laptopComputer from './emojis/laptop-computer.png';
 import redHeart from './emojis/red-heart.png';
-import falgPoland from './emojis/flag-poland.png';
+import flagPoland from './emojis/flag-poland.png';
 import raisingHands from './emojis/raising-hands.png';
 import email from './emojis/email.svg';
 import linkedin from './emojis/linkedin.svg';
@@ -46,7 +46,7 @@ const Emoji = styled.i`
       case 'red-heart':
         return { backgroundImage: `url(${redHeart})` };
       case 'flag-poland':
-        return { backgroundImage: `url(${falgPoland})` };
+        return { backgroundImage: `url(${flagPoland})` };
       case 'raising-hands':
         return { backgroundImage: `url(${raisingHands})` };
       case 'email':

@@ -3,6 +3,7 @@ import { injectGlobal } from 'styled-components';
 import { avertaRegularData } from './avertaRegularData';
 import { avertaBoldData } from './avertaBoldData';
 
+// eslint-disable-next-line no-unused-expressions
 injectGlobal`
   @font-face {
     font-family: 'Averta';

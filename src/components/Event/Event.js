@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from 'prop-types';
 import { EventCard } from './EventCard';
 import { EventHeadline } from './EventHeadline';
 import { EventTopic } from './EventTopic';
@@ -7,11 +8,7 @@ import { EventLink } from './EventLink';
 import { EventVideoLink } from './EventVideoLink';
 
 export const Event = ({
-  headline,
-  topic,
-  name,
-  link,
-  videoLink,
+  headline, topic, name, link, videoLink,
 }) => (
   <EventCard>
     <EventHeadline>{headline}</EventHeadline>
@@ -35,3 +32,16 @@ export const Event = ({
     )}
   </EventCard>
 );
+
+Event.propTypes = {
+  headline: string.isRequired,
+  topic: string.isRequired,
+  name: string.isRequired,
+  link: string,
+  videoLink: string,
+};
+
+Event.defaultProps = {
+  link: '',
+  videoLink: '',
+};

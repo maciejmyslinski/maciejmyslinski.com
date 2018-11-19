@@ -1,7 +1,7 @@
 import system from 'system-components';
 import { responsiveFontSize } from '../../utils/responsiveFontSize';
 
-const mt = responsiveFontSize({minSize: 2, maxSize: 15})
+const mt = responsiveFontSize({ minSize: 2, maxSize: 15 });
 
 export const Section = system({
   display: 'flex',

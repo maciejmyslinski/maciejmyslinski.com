@@ -173,14 +173,12 @@ const plxProps = {
   ],
 };
 
-export default props => (
+export default () => (
   <Styles>
     <Wrapper>
       <Helmet>
         <html lang="en" />
-        <title>
-          Maciej Myśliński – Senior Frontend Developer, Public Speaker.
-        </title>
+        <title>Maciej Myśliński – Senior Frontend Developer, Public Speaker.</title>
         <meta
           name="description"
           content="My mission in 2018 is to speak at every frontend-related meetup in Poland."
@@ -191,9 +189,12 @@ export default props => (
         <Avatar alt="avatar" />
         <H1>Maciej Myśliński</H1>
         <P textAlign="center" mb="7rem">
-          Senior Frontend Developer and Team Leader at Netguru. Public Speaker,
-          on a mission to speak at every frontend-related meetup in Poland{' '}
-          <Emoji name="flag-poland" /> in 2018.
+          Senior Frontend Developer and Team Leader at Netguru. Public Speaker, on a mission to
+          speak at every frontend-related meetup in Poland
+          {' '}
+          <Emoji name="flag-poland" />
+          {' '}
+in 2018.
         </P>
       </OptimalLineLength>
       <SocialMedia>
@@ -235,10 +236,7 @@ export default props => (
       </H3>
       <Events>
         {pastEvents.map((event, i) => (
-          <AnimateInOut
-            key={`${event.headline}${event.topic}`}
-            delay={i % 2 === 0 ? 0 : 200}
-          >
+          <AnimateInOut key={`${event.headline}${event.topic}`} delay={i % 2 === 0 ? 0 : 200}>
             <Event key={`${event.headline}${event.topic}`} {...event} />
           </AnimateInOut>
         ))}
@@ -251,24 +249,32 @@ export default props => (
           Bio
         </H2>
         <P>
-          As a child, he dreamed of becoming a pilot. Hungry for the freedom of
-          flying <Emoji name="airplane" />, he craved to learn everything
-          required to control the plane. He wanted people to feel the peace of
-          knowing he is going to be the one to take them home.
+          As a child, he dreamed of becoming a pilot. Hungry for the freedom of flying
+          {' '}
+          <Emoji name="airplane" />
+, he craved to learn everything required to control the plane. He
+          wanted people to feel the peace of knowing he is going to be the one to take them home.
         </P>
         <P>
-          At age 19 he didn't even know what the word ‘framework’ meant.
-          Nevertheless, he sold his motorbike <Emoji name="motorcycle" />,
-          purchased his first computer <Emoji name="laptop-computer" /> and
-          started to learn coding.
+          At age 19 he didn&apos;t even know what the word ‘framework’ meant. Nevertheless, he sold
+          his motorbike
+          {' '}
+          <Emoji name="motorcycle" />
+, purchased his first computer
+          {' '}
+          <Emoji name="laptop-computer" />
+          {' '}
+and started to learn coding.
         </P>
         <P>
-          Today as a Senior Frontend Developer, Team Leader and the host of
-          internal Frontend meetings at Netguru, he enjoys the freedom of
-          building anything that the technology allows him to. His goal changed
-          a little bit but the idea remained the same – he loves{' '}
-          <Emoji name="red-heart" /> to give users a feeling of peace and
-          security while taking infinite care about user experience he delivers.
+          Today as a Senior Frontend Developer, Team Leader and the host of internal Frontend
+          meetings at Netguru, he enjoys the freedom of building anything that the technology allows
+          him to. His goal changed a little bit but the idea remained the same – he loves
+          {' '}
+          <Emoji name="red-heart" />
+          {' '}
+to give users a feeling of peace and security while taking
+          infinite care about user experience he delivers.
         </P>
       </OptimalLineLength>
     </Wrapper>
