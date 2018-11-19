@@ -139,7 +139,7 @@ const upcomingEvents = [
   {
     headline: '11.12 Poland, Toruń',
     topic: '“What I learned creating my first Open Source library”',
-    name: 'meet.js Toruń',
+    name: 'meet.js',
   },
   {
     headline: '12.12 Poland, Warszawa',
@@ -150,7 +150,7 @@ const upcomingEvents = [
   {
     headline: '26.02 Poland, Wrocław',
     topic: 'Topic yet to be announced',
-    name: 'dev.js Wrocław',
+    name: 'dev.js',
   },
 ];
 
