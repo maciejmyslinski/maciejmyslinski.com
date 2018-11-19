@@ -110,6 +110,12 @@ const pastEvents = [
       'https://www.facebook.com/front.radar/photos/a.318446155553904/318446368887216/?type=3&theater',
   },
   {
+    headline: '30.10 Germany, Darmstadt',
+    topic: 'Introducing Liquid Design System',
+    name: 'Merck KGaA',
+    link: 'https://www.merck.design/',
+  },
+  {
     headline: '8.11 Poland, Olsztyn',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
@@ -129,6 +135,22 @@ const upcomingEvents = [
     topic: '“The missing piece of testing”',
     name: 'Frontend Con 2018',
     link: 'https://frontend-con.io/speakers/',
+  },
+  {
+    headline: '11.12 Poland, Toruń',
+    topic: '“What I learned creating my first Open Source library”',
+    name: 'meet.js Toruń',
+  },
+  {
+    headline: '12.12 Poland, Warszawa',
+    topic: '“What I learned creating my first Open Source library”',
+    name: 'WarsawJS',
+    link: 'https://warsawjs.com/meetups',
+  },
+  {
+    headline: '26.02 Poland, Wrocław',
+    topic: 'Topic yet to be announced',
+    name: 'dev.js Wrocław',
   },
 ];
 

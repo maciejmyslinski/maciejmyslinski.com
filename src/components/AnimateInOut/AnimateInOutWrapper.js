@@ -2,7 +2,6 @@ import system from 'system-components';
 import { number } from 'prop-types';
 import { responsiveFontSize } from '../../utils/responsiveFontSize';
 
-const marginY = responsiveFontSize({ minSize: 1.25, maxSize: 2.5 });
 const pxToEm = px => px / 16;
 
 export const AnimateInOutWrapper = system(
