@@ -21,18 +21,19 @@ import { AnimateInOut } from '../components/AnimateInOut/AnimateInOut';
 import { Fonts } from '../components/Fonts/Fonts';
 
 const socialMediaAccounts = [
-  {
-    name: 'youtube',
-    url: 'https://youtube.com/maciejmyslinski',
-  },
-  {
-    name: 'instagram',
-    url: 'https://www.instagram.com/maciej.myslinski/',
-  },
-  {
-    name: 'linkedin',
-    url: 'https://www.linkedin.com/in/maciejmyslinski/',
-  },
+  // medium?
+  // {
+  //   name: 'youtube',
+  //   url: 'https://youtube.com/maciejmyslinski',
+  // },
+  // {
+  //   name: 'instagram',
+  //   url: 'https://www.instagram.com/maciej.myslinski/',
+  // },
+  // {
+  //   name: 'linkedin',
+  //   url: 'https://www.linkedin.com/in/maciejmyslinski/',
+  // },
   {
     name: 'twitter',
     url: 'https://twitter.com/maciejmyslinski',
@@ -49,79 +50,85 @@ const socialMediaAccounts = [
 
 const pastEvents = [
   {
-    headline: '14.11 Poland, Białystok',
+    headline: 'December 5, 2018 Poland, Warsaw',
+    topic: '“The missing piece of testing”',
+    name: 'Frontend Con 2018',
+    link: 'https://frontend-con.io/speakers/',
+  },
+  {
+    headline: 'November 14, 2018 Poland, Białystok',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
     link: 'https://www.facebook.com/events/583484972107142/',
   },
   {
-    headline: '8.11 Poland, Olsztyn',
+    headline: 'November 8, 2018 Poland, Olsztyn',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
     link: 'https://www.facebook.com/events/1432139586930676/',
   },
   {
-    headline: '30.10 Germany, Darmstadt',
+    headline: 'October 30, 2018 Germany, Darmstadt',
     topic: 'Introducing Liquid Design System',
     name: 'Merck KGaA',
     link: 'https://www.merck.design/',
   },
   {
-    headline: '25.10 Poland, Poznań',
+    headline: 'October 25, 2018 Poland, Poznań',
     topic: '"What I learned creating my first Open Source library"',
     name: 'front.radar',
     link:
       'https://www.facebook.com/front.radar/photos/a.318446155553904/318446368887216/?type=3&theater',
   },
   {
-    headline: '24.10 Poland, Lublin',
+    headline: 'October 24, 2018 Poland, Lublin',
     topic: '"What I learned creating my first Open Source library"',
     name: 'G/Devs Lublin',
     link:
       'https://www.facebook.com/gdevslublin/photos/rpp.520958894721563/1182752718542174/?type=3&theater',
   },
   {
-    headline: '02.10 Poland, Gliwice',
+    headline: 'October 02, 2018 Poland, Gliwice',
     topic: '"What I learned creating my first Open Source library"',
     name: 'DevDuck',
     link: 'https://www.meetup.com/Devduck/events/254266703/',
   },
   {
-    headline: '29.09 Poland, Poznań',
+    headline: 'September 29, 2018 Poland, Poznań',
     topic: '"Async"',
     name: 'Netguru Tech Talks',
   },
   {
-    headline: '29.09 Poland, Poznań',
+    headline: 'September 29, 2018 Poland, Poznań',
     topic: '"What I learned creating my first Open Source library"',
     name: 'Netguru Tech Talks',
   },
   {
-    headline: '26.09 Poland, Warsaw',
+    headline: 'September 26, 2018 Poland, Warsaw',
     topic: '"What I learned creating my first Open Source library"',
     name: 'dev.js',
     link: 'https://www.meetup.com/dev-js/events/251135731/',
     videoLink: 'https://www.facebook.com/devjspoland/videos/548311215612437/',
   },
   {
-    headline: '17.09 Poland, Kraków',
+    headline: 'September 17, 2018 Poland, Kraków',
     topic: '"What I learned creating my first Open Source library"',
     name: 'meet.js',
   },
   {
-    headline: '31.08 Poland, Szczecin',
+    headline: 'August 31, 2018 Poland, Szczecin',
     topic: '"What I learned creating my first Open Source library"',
     name: 'meet.js',
     link: 'https://web.facebook.com/events/381649469036136/',
   },
   {
-    headline: '27.08 Poland, Wrocław',
+    headline: 'August 27, 2018 Poland, Wrocław',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
     videoLink: 'https://web.facebook.com/hubert.zub/videos/1980027542053919/',
   },
   {
-    headline: '06.06 Poland, Poznań',
+    headline: 'June 06, 2018 Poland, Poznań',
     topic: '“What I learned creating my first Open Source library”',
     name: 'chill.js',
     link:
@@ -131,25 +138,25 @@ const pastEvents = [
 
 const upcomingEvents = [
   {
-    headline: '4-5.12 Poland, Warsaw',
-    topic: '“The missing piece of testing”',
-    name: 'Frontend Con 2018',
-    link: 'https://frontend-con.io/speakers/',
-  },
-  {
-    headline: '11.12 Poland, Toruń',
+    headline: 'December 11, 2018 Poland, Toruń',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
+    link: 'https://www.facebook.com/events/1187924334690766/',
   },
   {
-    headline: '12.12 Poland, Warszawa',
-    topic: '“What I learned creating my first Open Source library”',
-    name: 'WarsawJS',
-    link: 'https://warsawjs.com/meetups',
+    headline: 'December 14, 2018 Poland, Poznań',
+    topic: '“The missing piece of testing”',
+    name: 'meet.js Poznań',
+    link: 'https://www.facebook.com/events/2180920808638226/',
   },
   {
-    headline: '26.02 Poland, Wrocław',
-    topic: 'Topic yet to be announced',
+    headline: 'February 2019 Poland, Gdańsk',
+    topic: '“The missing piece of testing”',
+    name: 'meet.js Gdańsk',
+  },
+  {
+    headline: 'February 26, 2019 Poland, Wrocław',
+    topic: '“The missing piece of testing”',
     name: 'dev.js',
   },
 ];
@@ -190,7 +197,7 @@ export default () => (
         <Avatar alt="avatar" />
         <H1>Maciej Myśliński</H1>
         <P textAlign="center" mb="7rem">
-          Senior Frontend Developer and Team Leader at Netguru. Public Speaker, on a mission to
+          Public Speaker, Senior Frontend Developer, and Team Leader at Netguru. On a mission to
           speak at every frontend-related meetup in Poland
           {' '}
           <Emoji name="flag-poland" />

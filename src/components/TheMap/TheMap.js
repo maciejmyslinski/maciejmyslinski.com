@@ -19,7 +19,6 @@ const cities = [
     name: 'Warszawa',
     top: '43%',
     left: '66%',
-    isUpcoming: true,
   },
   {
     name: 'Gliwice',
@@ -49,6 +48,12 @@ const cities = [
   {
     name: 'Toruń',
     top: '30%',
+    left: '45%',
+    isUpcoming: true,
+  },
+  {
+    name: 'Gdańsk',
+    top: '10%',
     left: '45%',
     isUpcoming: true,
   },
