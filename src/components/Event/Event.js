@@ -7,9 +7,7 @@ import { EventName } from './EventName';
 import { EventLink } from './EventLink';
 import { EventVideoLink } from './EventVideoLink';
 
-export const Event = ({
-  headline, topic, name, link, videoLink,
-}) => (
+export const Event = ({ headline, topic, name, link, videoLink }) => (
   <EventCard>
     <EventHeadline>{headline}</EventHeadline>
     <EventTopic>{topic}</EventTopic>

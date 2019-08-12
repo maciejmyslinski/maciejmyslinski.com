@@ -50,6 +50,28 @@ const socialMediaAccounts = [
 
 const pastEvents = [
   {
+    headline: 'February 26, 2019 Poland, Wrocław',
+    topic: '“The missing piece of testing”',
+    name: 'dev.js',
+  },
+  {
+    headline: 'February 2019 Poland, Gdańsk',
+    topic: '“The missing piece of testing”',
+    name: 'meet.js Gdańsk',
+  },
+  {
+    headline: 'December 14, 2018 Poland, Poznań',
+    topic: '“The missing piece of testing”',
+    name: 'meet.js Poznań',
+    link: 'https://www.facebook.com/events/2180920808638226/',
+  },
+  {
+    headline: 'December 11, 2018 Poland, Toruń',
+    topic: '“What I learned creating my first Open Source library”',
+    name: 'meet.js',
+    link: 'https://www.facebook.com/events/1187924334690766/',
+  },
+  {
     headline: 'December 5, 2018 Poland, Warsaw',
     topic: '“The missing piece of testing”',
     name: 'Frontend Con 2018',
@@ -136,31 +158,6 @@ const pastEvents = [
   },
 ];
 
-const upcomingEvents = [
-  {
-    headline: 'December 11, 2018 Poland, Toruń',
-    topic: '“What I learned creating my first Open Source library”',
-    name: 'meet.js',
-    link: 'https://www.facebook.com/events/1187924334690766/',
-  },
-  {
-    headline: 'December 14, 2018 Poland, Poznań',
-    topic: '“The missing piece of testing”',
-    name: 'meet.js Poznań',
-    link: 'https://www.facebook.com/events/2180920808638226/',
-  },
-  {
-    headline: 'February 2019 Poland, Gdańsk',
-    topic: '“The missing piece of testing”',
-    name: 'meet.js Gdańsk',
-  },
-  {
-    headline: 'February 26, 2019 Poland, Wrocław',
-    topic: '“The missing piece of testing”',
-    name: 'dev.js',
-  },
-];
-
 const plxProps = {
   disabled: typeof window === 'undefined',
   parallaxData: [
@@ -185,11 +182,8 @@ export default () => (
     <Wrapper>
       <Helmet>
         <html lang="en" />
-        <title>Maciej Myśliński – Senior Frontend Developer, Public Speaker.</title>
-        <meta
-          name="description"
-          content="My mission in 2018 is to speak at every frontend-related meetup in Poland."
-        />
+        <title>Maciej Myśliński – Senior Frontend Developer.</title>
+        <meta name="description" />
       </Helmet>
       <Fonts />
       <TheSun />
@@ -197,12 +191,10 @@ export default () => (
         <Avatar alt="avatar" />
         <H1>Maciej Myśliński</H1>
         <P textAlign="center" mb="7rem">
-          Public Speaker, Senior Frontend Developer, and Team Leader at Netguru. On a mission to
-          speak at every frontend-related meetup in Poland
-          {' '}
+          Senior Frontend Developer at 15Five. I spoke at almost every
+          frontend-related meetup in Poland
           <Emoji name="flag-poland" />
-          {' '}
-in 2018.
+          in 2018.
         </P>
       </OptimalLineLength>
       <SocialMedia>
@@ -228,23 +220,14 @@ in 2018.
 
     <Section>
       <H3>
-        <Plx {...plxProps}>Upcoming</Plx>
-      </H3>
-      <Events>
-        {upcomingEvents.map(event => (
-          <AnimateInOut key={`${event.headline}${event.topic}`}>
-            <Event {...event} />
-          </AnimateInOut>
-        ))}
-      </Events>
-    </Section>
-    <Section>
-      <H3>
         <Plx {...plxProps}>Past</Plx>
       </H3>
       <Events>
         {pastEvents.map((event, i) => (
-          <AnimateInOut key={`${event.headline}${event.topic}`} delay={i % 2 === 0 ? 0 : 200}>
+          <AnimateInOut
+            key={`${event.headline}${event.topic}`}
+            delay={i % 2 === 0 ? 0 : 200}
+          >
             <Event key={`${event.headline}${event.topic}`} {...event} />
           </AnimateInOut>
         ))}
@@ -257,32 +240,27 @@ in 2018.
           Bio
         </H2>
         <P>
-          As a child, he dreamed of becoming a pilot. Hungry for the freedom of flying
-          {' '}
-          <Emoji name="airplane" />
-, he craved to learn everything required to control the plane. He
-          wanted people to feel the peace of knowing he is going to be the one to take them home.
+          As a child, he dreamed of becoming a pilot. Hungry for the freedom of
+          flying
+          <Emoji name="airplane" />, he craved to learn everything required to
+          control the plane. He wanted people to feel the peace of knowing he is
+          going to be the one to take them home.
         </P>
         <P>
-          At age 19 he didn&apos;t even know what the word ‘framework’ meant. Nevertheless, he sold
-          his motorbike
-          {' '}
+          At age 19 he didn&apos;t even know what the word ‘framework’ meant.
+          Nevertheless, he sold his motorbike
           <Emoji name="motorcycle" />
-, purchased his first computer
-          {' '}
+          , purchased his first computer
           <Emoji name="laptop-computer" />
-          {' '}
-and started to learn coding.
+          and started to learn coding.
         </P>
         <P>
-          Today as a Senior Frontend Developer, Team Leader and the host of internal Frontend
-          meetings at Netguru, he enjoys the freedom of building anything that the technology allows
-          him to. His goal changed a little bit but the idea remained the same – he loves
-          {' '}
+          Today as a Senior Frontend Developer at 15Five, he enjoys the freedom
+          of building anything that the technology allows him to. His goal
+          changed a little bit but the idea remained the same – he loves{' '}
           <Emoji name="red-heart" />
-          {' '}
-to give users a feeling of peace and security while taking
-          infinite care about user experience he delivers.
+          to give users a feeling of peace and security while taking infinite
+          care about user experience he delivers.
         </P>
       </OptimalLineLength>
     </Wrapper>
