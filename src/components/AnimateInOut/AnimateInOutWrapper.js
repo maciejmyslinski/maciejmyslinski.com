@@ -1,7 +1,7 @@
 import system from 'system-components';
 import { number } from 'prop-types';
 
-const pxToEm = px => px / 16;
+const pxToEm = (px) => px / 16;
 
 export const AnimateInOutWrapper = system(
   {

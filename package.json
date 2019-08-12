@@ -25,11 +25,11 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.9.0-0",
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
     "gatsby-plugin-manifest": "^2.0.9",
     "gatsby-plugin-offline": "^2.0.15",
     "gatsby-plugin-react-helmet": "^3.0.2",
@@ -37,6 +37,6 @@
     "gatsby-plugin-styled-components": "^3.0.2",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
-    "prettier-eslint-cli": "^4.7.1"
+    "prettier-eslint-cli": "^5.0.0"
   }
 }

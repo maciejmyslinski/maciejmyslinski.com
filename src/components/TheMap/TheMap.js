@@ -62,9 +62,7 @@ const cities = [
 export const TheMap = () => (
   <div style={{ position: 'relative' }}>
     <img style={{ width: '100%' }} src={theMap} alt="public speaking map" />
-    {cities.map(({
-      name, left, top, isUpcoming,
-    }) => (
+    {cities.map(({ name, left, top, isUpcoming }) => (
       <TheMapDot key={name} top={top} left={left} isUpcoming={isUpcoming} />
     ))}
   </div>
