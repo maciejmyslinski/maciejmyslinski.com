@@ -50,6 +50,11 @@ const socialMediaAccounts = [
 
 const pastEvents = [
   {
+    headline: 'April 8, 2019 Poland, Warszawa',
+    topic: '“The missing piece of testing”',
+    name: '4Developers',
+  },
+  {
     headline: 'February 26, 2019 Poland, Wrocław',
     topic: '“The missing piece of testing”',
     name: 'dev.js',
