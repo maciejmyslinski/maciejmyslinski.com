@@ -277,16 +277,15 @@ and started to learn
 				
 </P>
   <P>
-					Today as a Senior Frontend Developer, Team Leader and the
-					host of internal Frontend meetings at Netguru, he enjoys the
-					freedom of building anything that the technology allows him
-					to. His goal changed a little bit but the idea remained the
-					same – he loves 
+					Today as a Senior Frontend Developer at 15Five, he enjoys
+					the freedom of building anything that the technology allows
+					him to. His goal changed a little bit but the idea remained
+					the same – he loves 
 {' '}
 <Emoji name="red-heart" />
 {' '}
-to give users a
-					feeling of peace and security while taking infinite care
+to give users
+					a feeling of peace and security while taking infinite care
 					about user experience he delivers.
 				
 </P>
