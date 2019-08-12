@@ -185,10 +185,7 @@ export default () => (
   <Helmet>
   <html lang="en" />
   <title>Maciej Myśliński – Senior Frontend Developer.</title>
-  <meta
-  name="description"
-  content="My mission in 2018 is to speak at every frontend-related meetup in Poland."
-				/>
+  <meta name="description" />
 			</Helmet>
   <Fonts />
   <TheSun />
