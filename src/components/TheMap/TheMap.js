@@ -13,7 +13,6 @@ const cities = [
     name: 'Wrocław',
     top: '61%',
     left: '33%',
-    isUpcoming: true,
   },
   {
     name: 'Warszawa',
@@ -49,13 +48,11 @@ const cities = [
     name: 'Toruń',
     top: '30%',
     left: '45%',
-    isUpcoming: true,
   },
   {
     name: 'Gdańsk',
     top: '10%',
     left: '45%',
-    isUpcoming: true,
   },
 ];
 
