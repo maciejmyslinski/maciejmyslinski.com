@@ -50,6 +50,28 @@ const socialMediaAccounts = [
 
 const pastEvents = [
   {
+    headline: 'February 26, 2019 Poland, Wrocław',
+    topic: '“The missing piece of testing”',
+    name: 'dev.js',
+  },
+  {
+    headline: 'February 2019 Poland, Gdańsk',
+    topic: '“The missing piece of testing”',
+    name: 'meet.js Gdańsk',
+  },
+  {
+    headline: 'December 14, 2018 Poland, Poznań',
+    topic: '“The missing piece of testing”',
+    name: 'meet.js Poznań',
+    link: 'https://www.facebook.com/events/2180920808638226/',
+  },
+  {
+    headline: 'December 11, 2018 Poland, Toruń',
+    topic: '“What I learned creating my first Open Source library”',
+    name: 'meet.js',
+    link: 'https://www.facebook.com/events/1187924334690766/',
+  },
+  {
     headline: 'December 5, 2018 Poland, Warsaw',
     topic: '“The missing piece of testing”',
     name: 'Frontend Con 2018',
@@ -78,14 +100,14 @@ const pastEvents = [
     topic: '"What I learned creating my first Open Source library"',
     name: 'front.radar',
     link:
-      'https://www.facebook.com/front.radar/photos/a.318446155553904/318446368887216/?type=3&theater',
+			'https://www.facebook.com/front.radar/photos/a.318446155553904/318446368887216/?type=3&theater',
   },
   {
     headline: 'October 24, 2018 Poland, Lublin',
     topic: '"What I learned creating my first Open Source library"',
     name: 'G/Devs Lublin',
     link:
-      'https://www.facebook.com/gdevslublin/photos/rpp.520958894721563/1182752718542174/?type=3&theater',
+			'https://www.facebook.com/gdevslublin/photos/rpp.520958894721563/1182752718542174/?type=3&theater',
   },
   {
     headline: 'October 02, 2018 Poland, Gliwice',
@@ -108,7 +130,8 @@ const pastEvents = [
     topic: '"What I learned creating my first Open Source library"',
     name: 'dev.js',
     link: 'https://www.meetup.com/dev-js/events/251135731/',
-    videoLink: 'https://www.facebook.com/devjspoland/videos/548311215612437/',
+    videoLink:
+			'https://www.facebook.com/devjspoland/videos/548311215612437/',
   },
   {
     headline: 'September 17, 2018 Poland, Kraków',
@@ -125,39 +148,15 @@ const pastEvents = [
     headline: 'August 27, 2018 Poland, Wrocław',
     topic: '“What I learned creating my first Open Source library”',
     name: 'meet.js',
-    videoLink: 'https://web.facebook.com/hubert.zub/videos/1980027542053919/',
+    videoLink:
+			'https://web.facebook.com/hubert.zub/videos/1980027542053919/',
   },
   {
     headline: 'June 06, 2018 Poland, Poznań',
     topic: '“What I learned creating my first Open Source library”',
     name: 'chill.js',
     link:
-      'https://web.facebook.com/netguru/photos/gm.1868374533213251/10156257742389795/?type=1&theater',
-  },
-];
-
-const upcomingEvents = [
-  {
-    headline: 'December 11, 2018 Poland, Toruń',
-    topic: '“What I learned creating my first Open Source library”',
-    name: 'meet.js',
-    link: 'https://www.facebook.com/events/1187924334690766/',
-  },
-  {
-    headline: 'December 14, 2018 Poland, Poznań',
-    topic: '“The missing piece of testing”',
-    name: 'meet.js Poznań',
-    link: 'https://www.facebook.com/events/2180920808638226/',
-  },
-  {
-    headline: 'February 2019 Poland, Gdańsk',
-    topic: '“The missing piece of testing”',
-    name: 'meet.js Gdańsk',
-  },
-  {
-    headline: 'February 26, 2019 Poland, Wrocław',
-    topic: '“The missing piece of testing”',
-    name: 'dev.js',
+			'https://web.facebook.com/netguru/photos/gm.1868374533213251/10156257742389795/?type=1&theater',
   },
 ];
 
@@ -182,109 +181,116 @@ const plxProps = {
 
 export default () => (
   <Styles>
-    <Wrapper>
-      <Helmet>
-        <html lang="en" />
-        <title>Maciej Myśliński – Senior Frontend Developer, Public Speaker.</title>
-        <meta
-          name="description"
-          content="My mission in 2018 is to speak at every frontend-related meetup in Poland."
-        />
-      </Helmet>
-      <Fonts />
-      <TheSun />
-      <OptimalLineLength>
-        <Avatar alt="avatar" />
-        <H1>Maciej Myśliński</H1>
-        <P textAlign="center" mb="7rem">
-          Public Speaker, Senior Frontend Developer, and Team Leader at Netguru. On a mission to
-          speak at every frontend-related meetup in Poland
-          {' '}
-          <Emoji name="flag-poland" />
-          {' '}
+  <Wrapper>
+  <Helmet>
+  <html lang="en" />
+  <title>Maciej Myśliński – Senior Frontend Developer.</title>
+  <meta
+  name="description"
+  content="My mission in 2018 is to speak at every frontend-related meetup in Poland."
+				/>
+			</Helmet>
+  <Fonts />
+  <TheSun />
+  <OptimalLineLength>
+  <Avatar alt="avatar" />
+  <H1>Maciej Myśliński</H1>
+  <P textAlign="center" mb="7rem">
+					Senior Frontend Developer at 15Five. I spoke at almost every
+					frontend-related meetup in Poland
+{" "}
+  <Emoji name="flag-poland" />
+{' '}
 in 2018.
-        </P>
-      </OptimalLineLength>
-      <SocialMedia>
-        {socialMediaAccounts.map(account => (
-          <a
-            key={account.name}
-            href={account.url}
-            aria-label={account.name}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Emoji name={account.name} />
-          </a>
-        ))}
-      </SocialMedia>
-      <OptimalLineLength>
-        <H2 id="public-speaking-events" mt="12rem" mb="5rem">
-          Public speaking
-        </H2>
-        <TheMap />
-      </OptimalLineLength>
-    </Wrapper>
+				
+</P>
+			</OptimalLineLength>
+  <SocialMedia>
+  {socialMediaAccounts.map(account => (
+  <a
+  key={account.name}
+  href={account.url}
+  aria-label={account.name}
+  target="_blank"
+  rel="noopener noreferrer"
+					>
+  <Emoji name={account.name} />
+					</a>
+				))}
+			</SocialMedia>
+  <OptimalLineLength>
+  <H2 id="public-speaking-events" mt="12rem" mb="5rem">
+					Public speaking
+				
+</H2>
+  <TheMap />
+			</OptimalLineLength>
+		</Wrapper>
 
-    <Section>
-      <H3>
-        <Plx {...plxProps}>Upcoming</Plx>
-      </H3>
-      <Events>
-        {upcomingEvents.map(event => (
-          <AnimateInOut key={`${event.headline}${event.topic}`}>
-            <Event {...event} />
-          </AnimateInOut>
-        ))}
-      </Events>
-    </Section>
-    <Section>
-      <H3>
-        <Plx {...plxProps}>Past</Plx>
-      </H3>
-      <Events>
-        {pastEvents.map((event, i) => (
-          <AnimateInOut key={`${event.headline}${event.topic}`} delay={i % 2 === 0 ? 0 : 200}>
-            <Event key={`${event.headline}${event.topic}`} {...event} />
-          </AnimateInOut>
-        ))}
-      </Events>
-    </Section>
-    <Wrapper>
-      <OptimalLineLength>
-        <H2 id="bio">
-          <Emoji name="waving-hand" />
-          Bio
-        </H2>
-        <P>
-          As a child, he dreamed of becoming a pilot. Hungry for the freedom of flying
-          {' '}
-          <Emoji name="airplane" />
-, he craved to learn everything required to control the plane. He
-          wanted people to feel the peace of knowing he is going to be the one to take them home.
-        </P>
-        <P>
-          At age 19 he didn&apos;t even know what the word ‘framework’ meant. Nevertheless, he sold
-          his motorbike
-          {' '}
-          <Emoji name="motorcycle" />
+  <Section>
+  <H3>
+  <Plx {...plxProps}>Past</Plx>
+			</H3>
+  <Events>
+  {pastEvents.map((event, i) => (
+  <AnimateInOut
+  key={`${event.headline}${event.topic}`}
+  delay={i % 2 === 0 ? 0 : 200}
+					>
+  <Event
+  key={`${event.headline}${event.topic}`}
+  {...event}
+						/>
+					</AnimateInOut>
+				))}
+			</Events>
+		</Section>
+  <Wrapper>
+  <OptimalLineLength>
+  <H2 id="bio">
+  <Emoji name="waving-hand" />
+					Bio
+				
+</H2>
+  <P>
+					As a child, he dreamed of becoming a pilot. Hungry for the
+					freedom of flying 
+{' '}
+<Emoji name="airplane" />
+, he craved to
+					learn everything required to control the plane. He wanted
+					people to feel the peace of knowing he is going to be the
+					one to take them home.
+				
+</P>
+  <P>
+					At age 19 he didn&apos;t even know what the word ‘framework’
+					meant. Nevertheless, he sold his motorbike
+{" "}
+  <Emoji name="motorcycle" />
 , purchased his first computer
-          {' '}
-          <Emoji name="laptop-computer" />
-          {' '}
-and started to learn coding.
-        </P>
-        <P>
-          Today as a Senior Frontend Developer, Team Leader and the host of internal Frontend
-          meetings at Netguru, he enjoys the freedom of building anything that the technology allows
-          him to. His goal changed a little bit but the idea remained the same – he loves
-          {' '}
-          <Emoji name="red-heart" />
-          {' '}
-to give users a feeling of peace and security while taking
-          infinite care about user experience he delivers.
-        </P>
-      </OptimalLineLength>
-    </Wrapper>
-  </Styles>
+{" "}
+  <Emoji name="laptop-computer" />
+{' '}
+and started to learn
+					coding.
+				
+</P>
+  <P>
+					Today as a Senior Frontend Developer, Team Leader and the
+					host of internal Frontend meetings at Netguru, he enjoys the
+					freedom of building anything that the technology allows him
+					to. His goal changed a little bit but the idea remained the
+					same – he loves 
+{' '}
+<Emoji name="red-heart" />
+{' '}
+to give users a
+					feeling of peace and security while taking infinite care
+					about user experience he delivers.
+				
+</P>
+			</OptimalLineLength>
+		</Wrapper>
+	</Styles>
 );
